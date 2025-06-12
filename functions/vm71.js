@@ -1,0 +1,11 @@
+// 1 GET_VAR → stack[0] = scope[2][2]
+// 3 GET_PROP_NAME stack[0] ← stack[0]["_doRestOfXHRSend"]
+// 6 DUP → stack[1] = stack[0]
+// 6 GET_PROP_NAME stack[1] ← stack[1]["call"]
+// 9 GET_VAR → stack[2] = scope[1][3]
+// 12 GET_VAR → stack[3] = scope[1][2]
+// 15 GET_VAR → stack[4] = scope[0][2]
+// 18 CALL func.apply(thisArg, [3 args]) → stack[0]
+// 20 POP stack[0]
+// 21 PUSH_UNDEFINED → stack[0] = undefined
+// 22 RETURN stack[0]

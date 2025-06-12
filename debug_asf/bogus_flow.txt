@@ -1,0 +1,3117 @@
+------------------------103--------------------------
+// 0 PUSH_STRING → stack[0] = "d41d8cd98f00b204e9800998ecf8427e"
+// 3 SET_VAR scope[0][4] ← stack[0]
+// 6 GET_VAR → stack[0] = scope[0][3]
+// 9 PUSH_UNDEFINED → stack[1] = undefined
+// 10 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 10 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=15
+// 13 GET_VAR → stack[0] = scope[0][3]
+// 16 PUSH_NULL → stack[1] = null
+// 17 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 17 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=23
+// 20 GET_VAR → stack[0] = scope[0][3]
+// 22 PUSH_STRING → stack[1] = ""
+// 25 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 25 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=47
+// 28 PUSH_UNDEFINED → stack[0] = undefined
+// 29 GET_VAR → stack[1] = scope[2][2]
+// 32 GET_VAR → stack[2] = scope[0][3]
+// 35 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 37 SET_VAR scope[0][4] ← stack[0]
+// 39 JUMP → JUMP_TO=48
+// 42 SET_VAR scope[0][44] ← stack[-1]
+// 44 PUSH_STRING → stack[-1] = "ffffffffffffffffffffffffffffffff"
+// 47 SET_VAR scope[0][4] ← stack[-1]
+// 50 PUSH_UNDEFINED → stack[-1] = undefined
+// 51 GET_VAR → stack[0] = scope[2][10]
+// 54 CALL func.apply(thisArg, [0 args]) → stack[-1]
+// 56 POP stack[-1]
+// 57 PUSH_UNDEFINED → stack[-1] = undefined
+// 58 GET_VAR → stack[0] = scope[2][5]
+// 61 CALL func.apply(thisArg, [0 args]) → stack[-1]
+// 63 POP stack[-1]
+// 64 GET_VAR → stack[-1] = scope[2][6]
+// 66 GET_PROP_NAME stack[-1] ← stack[-1]["ubcode"]
+// 69 SET_VAR scope[0][5] ← stack[-1]
+// 72 GET_VAR → stack[-1] = scope[2][9]
+// 74 GET_PROP_NAME stack[-1] ← stack[-1]["envcode"]
+// 77 SET_VAR scope[0][6] ← stack[-1]
+// 79 PUSH_CONST → stack[-1] = 2
+// 82 SET_VAR scope[0][7] ← stack[-1]
+// 85 GET_VAR → stack[-1] = scope[0][7]
+// 88 SET_VAR scope[0][8] ← stack[-1]
+// 90 PUSH_CONST → stack[-1] = 64
+// 93 SET_VAR scope[0][9] ← stack[-1]
+// 96 PUSH_UNDEFINED → stack[-1] = undefined
+// 97 GET_VAR → stack[0] = scope[2][2]
+// 100 GET_VAR → stack[1] = scope[0][2]
+// 103 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 105 SET_VAR scope[0][10] ← stack[-1]
+// 108 GET_VAR → stack[-1] = scope[2][3]
+// 111 DUP → stack[0] = stack[-1]
+// 111 GET_PROP_NAME stack[0] ← stack[0]["decode"]
+// 114 PUSH_UNDEFINED → stack[1] = undefined
+// 115 GET_VAR → stack[2] = scope[2][2]
+// 118 GET_VAR → stack[3] = scope[2][3]
+// 121 DUP → stack[4] = stack[3]
+// 121 GET_PROP_NAME stack[4] ← stack[4]["decode"]
+// 124 GET_VAR → stack[5] = scope[0][10]
+// 127 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 129 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 131 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 133 SET_VAR scope[0][11] ← stack[-1]
+// 136 GET_VAR → stack[-1] = scope[2][3]
+// 139 DUP → stack[0] = stack[-1]
+// 139 GET_PROP_NAME stack[0] ← stack[0]["decode"]
+// 142 PUSH_UNDEFINED → stack[1] = undefined
+// 143 GET_VAR → stack[2] = scope[2][2]
+// 146 GET_VAR → stack[3] = scope[2][3]
+// 149 DUP → stack[4] = stack[3]
+// 149 GET_PROP_NAME stack[4] ← stack[4]["decode"]
+// 152 GET_VAR → stack[5] = scope[0][4]
+// 155 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 157 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 159 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 161 SET_VAR scope[0][12] ← stack[-1]
+// 163 GET_GLOBAL → stack[-1] = navigator
+// 165 GET_PROP_NAME stack[-1] ← stack[-1]["userAgent"]
+// 168 SET_VAR scope[0][13] ← stack[-1]
+// 171 PUSH_UNDEFINED → stack[-1] = undefined
+// 172 GET_VAR → stack[0] = scope[1][2]
+// 175 GET_VAR → stack[1] = scope[0][6]
+// 178 GET_VAR → stack[2] = scope[0][5]
+// 181 CALL func.apply(thisArg, [2 args]) → stack[-1]
+// 183 SET_VAR scope[0][14] ← stack[-1]
+// 186 PUSH_UNDEFINED → stack[-1] = undefined
+// 187 GET_VAR → stack[0] = scope[2][8]
+// 190 GET_VAR → stack[1] = scope[0][14]
+// 193 GET_VAR → stack[2] = scope[0][13]
+// 196 CALL func.apply(thisArg, [2 args]) → stack[-1]
+// 198 SET_VAR scope[0][15] ← stack[-1]
+// 201 PUSH_UNDEFINED → stack[-1] = undefined
+// 202 GET_VAR → stack[0] = scope[1][5]
+// 205 GET_VAR → stack[1] = scope[0][15]
+// 207 PUSH_STRING → stack[2] = "s0"
+// 210 CALL func.apply(thisArg, [2 args]) → stack[-1]
+// 212 SET_VAR scope[0][16] ← stack[-1]
+// 215 GET_VAR → stack[-1] = scope[2][3]
+// 218 DUP → stack[0] = stack[-1]
+// 218 GET_PROP_NAME stack[0] ← stack[0]["decode"]
+// 221 PUSH_UNDEFINED → stack[1] = undefined
+// 222 GET_VAR → stack[2] = scope[2][2]
+// 225 GET_VAR → stack[3] = scope[0][16]
+// 228 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 230 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 232 SET_VAR scope[0][17] ← stack[-1]
+// 234 GET_GLOBAL → stack[-1] = Date
+// 237 FUNCTION_BIND_APPLY → stack[-1] = new stack[-1](0 args)
+// 239 DUP → stack[0] = stack[-1]
+// 239 GET_PROP_NAME stack[0] ← stack[0]["getTime"]
+// 242 CALL func.apply(thisArg, [0 args]) → stack[-1]
+// 243 PUSH_CONST → stack[0] = 1000
+// 246 DIV stack[-1] = stack[-1] / stack[0]
+// 247 SET_VAR scope[0][18] ← stack[-1]
+// 250 PUSH_UNDEFINED → stack[-1] = undefined
+// 251 GET_VAR → stack[0] = scope[2][4]
+// 254 GET_VAR → stack[1] = scope[2][1]
+// 256 GET_PROP_NAME stack[1] ← stack[1]["perf"]
+// 259 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 260 GET_PROP_NAME stack[-1] ← stack[-1]["data"]
+// 263 SET_VAR scope[0][19] ← stack[-1]
+// 266 GET_VAR → stack[-1] = scope[0][9]
+// 269 SET_VAR scope[0][20] ← stack[-1]
+// 272 GET_VAR → stack[-1] = scope[0][6]
+// 274 PUSH_CONST → stack[0] = 256
+// 277 DIV stack[-1] = stack[-1] / stack[0]
+// 278 SET_VAR scope[0][21] ← stack[-1]
+// 281 GET_VAR → stack[-1] = scope[0][6]
+// 283 PUSH_CONST → stack[0] = 256
+// 286 MOD stack[-1] = stack[-1] % stack[0]
+// 287 SET_VAR scope[0][22] ← stack[-1]
+// 290 GET_VAR → stack[-1] = scope[0][5]
+// 293 SET_VAR scope[0][23] ← stack[-1]
+// 296 GET_VAR → stack[-1] = scope[0][11]
+// 298 GET_PROP_NAME stack[-1] ← stack[-1]["14"]
+// 301 SET_VAR scope[0][24] ← stack[-1]
+// 304 GET_VAR → stack[-1] = scope[0][11]
+// 306 GET_PROP_NAME stack[-1] ← stack[-1]["15"]
+// 309 SET_VAR scope[0][25] ← stack[-1]
+// 312 GET_VAR → stack[-1] = scope[0][12]
+// 314 GET_PROP_NAME stack[-1] ← stack[-1]["14"]
+// 317 SET_VAR scope[0][26] ← stack[-1]
+// 320 GET_VAR → stack[-1] = scope[0][12]
+// 322 GET_PROP_NAME stack[-1] ← stack[-1]["15"]
+// 325 SET_VAR scope[0][27] ← stack[-1]
+// 328 GET_VAR → stack[-1] = scope[0][17]
+// 330 GET_PROP_NAME stack[-1] ← stack[-1]["14"]
+// 333 SET_VAR scope[0][28] ← stack[-1]
+// 336 GET_VAR → stack[-1] = scope[0][17]
+// 338 GET_PROP_NAME stack[-1] ← stack[-1]["15"]
+// 341 SET_VAR scope[0][29] ← stack[-1]
+// 344 GET_VAR → stack[-1] = scope[0][18]
+// 346 PUSH_CONST → stack[0] = 24
+// 349 RIGHT_SHIFT stack[-1] = stack[-1] >> stack[0]
+// 349 PUSH_CONST → stack[0] = 255
+// 352 BITWISE_AND stack[-1] = stack[-1] & stack[0]
+// 353 SET_VAR scope[0][30] ← stack[-1]
+// 356 GET_VAR → stack[-1] = scope[0][18]
+// 358 PUSH_CONST → stack[0] = 16
+// 361 RIGHT_SHIFT stack[-1] = stack[-1] >> stack[0]
+// 361 PUSH_CONST → stack[0] = 255
+// 364 BITWISE_AND stack[-1] = stack[-1] & stack[0]
+// 365 SET_VAR scope[0][31] ← stack[-1]
+// 368 GET_VAR → stack[-1] = scope[0][18]
+// 370 PUSH_CONST → stack[0] = 8
+// 373 RIGHT_SHIFT stack[-1] = stack[-1] >> stack[0]
+// 373 PUSH_CONST → stack[0] = 255
+// 376 BITWISE_AND stack[-1] = stack[-1] & stack[0]
+// 377 SET_VAR scope[0][32] ← stack[-1]
+// 380 GET_VAR → stack[-1] = scope[0][18]
+// 382 PUSH_CONST → stack[0] = 0
+// 385 RIGHT_SHIFT stack[-1] = stack[-1] >> stack[0]
+// 385 PUSH_CONST → stack[0] = 255
+// 388 BITWISE_AND stack[-1] = stack[-1] & stack[0]
+// 389 SET_VAR scope[0][33] ← stack[-1]
+// 392 GET_VAR → stack[-1] = scope[0][19]
+// 394 PUSH_CONST → stack[0] = 24
+// 397 RIGHT_SHIFT stack[-1] = stack[-1] >> stack[0]
+// 397 PUSH_CONST → stack[0] = 255
+// 400 BITWISE_AND stack[-1] = stack[-1] & stack[0]
+// 401 SET_VAR scope[0][34] ← stack[-1]
+// 404 GET_VAR → stack[-1] = scope[0][19]
+// 406 PUSH_CONST → stack[0] = 16
+// 409 RIGHT_SHIFT stack[-1] = stack[-1] >> stack[0]
+// 409 PUSH_CONST → stack[0] = 255
+// 412 BITWISE_AND stack[-1] = stack[-1] & stack[0]
+// 413 SET_VAR scope[0][35] ← stack[-1]
+// 416 GET_VAR → stack[-1] = scope[0][19]
+// 418 PUSH_CONST → stack[0] = 8
+// 421 RIGHT_SHIFT stack[-1] = stack[-1] >> stack[0]
+// 421 PUSH_CONST → stack[0] = 255
+// 424 BITWISE_AND stack[-1] = stack[-1] & stack[0]
+// 425 SET_VAR scope[0][36] ← stack[-1]
+// 428 GET_VAR → stack[-1] = scope[0][19]
+// 430 PUSH_CONST → stack[0] = 0
+// 433 RIGHT_SHIFT stack[-1] = stack[-1] >> stack[0]
+// 433 PUSH_CONST → stack[0] = 255
+// 436 BITWISE_AND stack[-1] = stack[-1] & stack[0]
+// 437 SET_VAR scope[0][37] ← stack[-1]
+// 440 GET_VAR → stack[-1] = scope[0][20]
+// 443 GET_VAR → stack[0] = scope[0][21]
+// 446 XOR stack[-1] = stack[-1] ^ stack[0]
+// 447 GET_VAR → stack[0] = scope[0][22]
+// 450 XOR stack[-1] = stack[-1] ^ stack[0]
+// 451 GET_VAR → stack[0] = scope[0][23]
+// 454 XOR stack[-1] = stack[-1] ^ stack[0]
+// 455 GET_VAR → stack[0] = scope[0][24]
+// 458 XOR stack[-1] = stack[-1] ^ stack[0]
+// 459 GET_VAR → stack[0] = scope[0][25]
+// 462 XOR stack[-1] = stack[-1] ^ stack[0]
+// 463 GET_VAR → stack[0] = scope[0][26]
+// 466 XOR stack[-1] = stack[-1] ^ stack[0]
+// 467 GET_VAR → stack[0] = scope[0][27]
+// 470 XOR stack[-1] = stack[-1] ^ stack[0]
+// 471 GET_VAR → stack[0] = scope[0][28]
+// 474 XOR stack[-1] = stack[-1] ^ stack[0]
+// 475 GET_VAR → stack[0] = scope[0][29]
+// 478 XOR stack[-1] = stack[-1] ^ stack[0]
+// 479 GET_VAR → stack[0] = scope[0][30]
+// 482 XOR stack[-1] = stack[-1] ^ stack[0]
+// 483 GET_VAR → stack[0] = scope[0][31]
+// 486 XOR stack[-1] = stack[-1] ^ stack[0]
+// 487 GET_VAR → stack[0] = scope[0][32]
+// 490 XOR stack[-1] = stack[-1] ^ stack[0]
+// 491 GET_VAR → stack[0] = scope[0][33]
+// 494 XOR stack[-1] = stack[-1] ^ stack[0]
+// 495 GET_VAR → stack[0] = scope[0][34]
+// 498 XOR stack[-1] = stack[-1] ^ stack[0]
+// 499 GET_VAR → stack[0] = scope[0][35]
+// 502 XOR stack[-1] = stack[-1] ^ stack[0]
+// 503 GET_VAR → stack[0] = scope[0][36]
+// 506 XOR stack[-1] = stack[-1] ^ stack[0]
+// 507 GET_VAR → stack[0] = scope[0][37]
+// 510 XOR stack[-1] = stack[-1] ^ stack[0]
+// 511 SET_VAR scope[0][38] ← stack[-1]
+// 513 PUSH_CONST → stack[-1] = 255
+// 516 SET_VAR scope[0][39] ← stack[-1]
+// 519 PUSH_UNDEFINED → stack[-1] = undefined
+// 520 GET_VAR → stack[0] = scope[1][6]
+// 523 GET_VAR → stack[1] = scope[0][20]
+// 526 GET_VAR → stack[2] = scope[0][22]
+// 529 GET_VAR → stack[3] = scope[0][24]
+// 532 GET_VAR → stack[4] = scope[0][26]
+// 535 GET_VAR → stack[5] = scope[0][28]
+// 538 GET_VAR → stack[6] = scope[0][30]
+// 541 GET_VAR → stack[7] = scope[0][32]
+// 544 GET_VAR → stack[8] = scope[0][34]
+// 547 GET_VAR → stack[9] = scope[0][36]
+// 550 GET_VAR → stack[10] = scope[0][38]
+// 553 GET_VAR → stack[11] = scope[0][21]
+// 556 GET_VAR → stack[12] = scope[0][23]
+// 559 GET_VAR → stack[13] = scope[0][25]
+// 562 GET_VAR → stack[14] = scope[0][27]
+// 565 GET_VAR → stack[15] = scope[0][29]
+// 568 GET_VAR → stack[16] = scope[0][31]
+// 571 GET_VAR → stack[17] = scope[0][33]
+// 574 GET_VAR → stack[18] = scope[0][35]
+// 577 GET_VAR → stack[19] = scope[0][37]
+// 580 CALL func.apply(thisArg, [19 args]) → stack[-1]
+// 582 SET_VAR scope[0][40] ← stack[-1]
+// 585 PUSH_UNDEFINED → stack[-1] = undefined
+// 586 GET_VAR → stack[0] = scope[2][8]
+// 589 PUSH_UNDEFINED → stack[1] = undefined
+// 590 GET_VAR → stack[2] = scope[1][3]
+// 593 GET_VAR → stack[3] = scope[0][39]
+// 596 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 598 GET_VAR → stack[2] = scope[0][40]
+// 601 CALL func.apply(thisArg, [2 args]) → stack[-1]
+// 603 SET_VAR scope[0][41] ← stack[-1]
+// 606 PUSH_UNDEFINED → stack[-1] = undefined
+// 607 GET_VAR → stack[0] = scope[1][4]
+// 610 GET_VAR → stack[1] = scope[0][8]
+// 613 GET_VAR → stack[2] = scope[0][39]
+// 616 GET_VAR → stack[3] = scope[0][41]
+// 619 CALL func.apply(thisArg, [3 args]) → stack[-1]
+// 621 SET_VAR scope[0][42] ← stack[-1]
+// 624 PUSH_UNDEFINED → stack[-1] = undefined
+// 625 GET_VAR → stack[0] = scope[2][7]
+// 628 GET_VAR → stack[1] = scope[0][42]
+// 630 PUSH_STRING → stack[2] = "s2"
+// 633 CALL func.apply(thisArg, [2 args]) → stack[-1]
+// 635 SET_VAR scope[0][43] ← stack[-1]
+// 638 GET_VAR → stack[-1] = scope[0][43]
+// 641 RETURN stack[-1]
+------------------------245--------------------------
+// 1 PUSH_FALSE → stack[0] = false
+// 2 SET_VAR scope[0][2] ← stack[0]
+// 5 PUSH_FALSE → stack[0] = false
+// 6 SET_VAR scope[0][3] ← stack[0]
+// 9 PUSH_FALSE → stack[0] = false
+// 10 SET_VAR scope[0][4] ← stack[0]
+// 13 PUSH_FALSE → stack[0] = false
+// 14 SET_VAR scope[0][5] ← stack[0]
+// 17 PUSH_FALSE → stack[0] = false
+// 18 SET_VAR scope[0][6] ← stack[0]
+// 21 PUSH_FALSE → stack[0] = false
+// 22 SET_VAR scope[0][7] ← stack[0]
+// 25 PUSH_FALSE → stack[0] = false
+// 26 SET_VAR scope[0][8] ← stack[0]
+// 29 PUSH_FALSE → stack[0] = false
+// 30 SET_VAR scope[0][9] ← stack[0]
+// 33 PUSH_FALSE → stack[0] = false
+// 34 SET_VAR scope[0][10] ← stack[0]
+// 37 PUSH_FALSE → stack[0] = false
+// 38 SET_VAR scope[0][11] ← stack[0]
+// 41 PUSH_FALSE → stack[0] = false
+// 42 SET_VAR scope[0][12] ← stack[0]
+// 45 PUSH_UNDEFINED → stack[0] = undefined
+// 46 GET_VAR → stack[1] = scope[2][4]
+// 49 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 51 SET_VAR scope[0][5] ← stack[0]
+// 53 JUMP → JUMP_TO=78
+// 56 SET_VAR scope[0][14] ← stack[-1]
+// 59 GET_VAR → stack[-1] = scope[2][3]
+// 61 GET_PROP_NAME stack[-1] ← stack[-1]["slardarErrs"]
+// 64 DUP → stack[0] = stack[-1]
+// 64 GET_PROP_NAME stack[0] ← stack[0]["push"]
+// 67 NEW_OBJECT → stack[1] = {}
+// 68 GET_VAR → stack[2] = scope[0][14]
+// 70 DEFINE_PROP Object.defineProperty(stack[1], "err", stack[2])
+// 72 PUSH_STRING → stack[2] = "s_d"
+// 74 DEFINE_PROP Object.defineProperty(stack[1], "type", stack[2])
+// 77 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 79 POP stack[-1]
+// 80 GET_VAR → stack[-1] = scope[0][5]
+// 83 NOT stack[-1] = !stack[-1]
+// 83 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=398
+// 86 PUSH_UNDEFINED → stack[-1] = undefined
+// 87 GET_VAR → stack[0] = scope[2][0]
+// 90 CALL func.apply(thisArg, [0 args]) → stack[-1]
+// 92 SET_VAR scope[0][6] ← stack[-1]
+// 94 JUMP → JUMP_TO=119
+// 97 SET_VAR scope[0][15] ← stack[-2]
+// 100 GET_VAR → stack[-2] = scope[2][3]
+// 102 GET_PROP_NAME stack[-2] ← stack[-2]["slardarErrs"]
+// 105 DUP → stack[-1] = stack[-2]
+// 105 GET_PROP_NAME stack[-1] ← stack[-1]["push"]
+// 108 NEW_OBJECT → stack[0] = {}
+// 109 GET_VAR → stack[1] = scope[0][15]
+// 111 DEFINE_PROP Object.defineProperty(stack[0], "err", stack[1])
+// 113 PUSH_STRING → stack[1] = "s_de"
+// 115 DEFINE_PROP Object.defineProperty(stack[0], "type", stack[1])
+// 118 CALL func.apply(thisArg, [1 args]) → stack[-2]
+// 120 POP stack[-2]
+// 121 PUSH_UNDEFINED → stack[-2] = undefined
+// 122 GET_VAR → stack[-1] = scope[2][7]
+// 125 CALL func.apply(thisArg, [0 args]) → stack[-2]
+// 127 SET_VAR scope[0][10] ← stack[-2]
+// 129 JUMP → JUMP_TO=154
+// 132 SET_VAR scope[0][16] ← stack[-3]
+// 135 GET_VAR → stack[-3] = scope[2][3]
+// 137 GET_PROP_NAME stack[-3] ← stack[-3]["slardarErrs"]
+// 140 DUP → stack[-2] = stack[-3]
+// 140 GET_PROP_NAME stack[-2] ← stack[-2]["push"]
+// 143 NEW_OBJECT → stack[-1] = {}
+// 144 GET_VAR → stack[0] = scope[0][16]
+// 146 DEFINE_PROP Object.defineProperty(stack[-1], "err", stack[0])
+// 148 PUSH_STRING → stack[0] = "s_i"
+// 150 DEFINE_PROP Object.defineProperty(stack[-1], "type", stack[0])
+// 153 CALL func.apply(thisArg, [1 args]) → stack[-3]
+// 155 POP stack[-3]
+// 156 PUSH_UNDEFINED → stack[-3] = undefined
+// 157 GET_VAR → stack[-2] = scope[2][1]
+// 160 CALL func.apply(thisArg, [0 args]) → stack[-3]
+// 162 SET_VAR scope[0][7] ← stack[-3]
+// 164 JUMP → JUMP_TO=189
+// 167 SET_VAR scope[0][17] ← stack[-4]
+// 170 GET_VAR → stack[-4] = scope[2][3]
+// 172 GET_PROP_NAME stack[-4] ← stack[-4]["slardarErrs"]
+// 175 DUP → stack[-3] = stack[-4]
+// 175 GET_PROP_NAME stack[-3] ← stack[-3]["push"]
+// 178 NEW_OBJECT → stack[-2] = {}
+// 179 GET_VAR → stack[-1] = scope[0][17]
+// 181 DEFINE_PROP Object.defineProperty(stack[-2], "err", stack[-1])
+// 183 PUSH_STRING → stack[-1] = "s_n"
+// 185 DEFINE_PROP Object.defineProperty(stack[-2], "type", stack[-1])
+// 188 CALL func.apply(thisArg, [1 args]) → stack[-4]
+// 190 POP stack[-4]
+// 191 PUSH_UNDEFINED → stack[-4] = undefined
+// 192 GET_VAR → stack[-3] = scope[2][5]
+// 195 CALL func.apply(thisArg, [0 args]) → stack[-4]
+// 197 SET_VAR scope[0][8] ← stack[-4]
+// 199 JUMP → JUMP_TO=224
+// 202 SET_VAR scope[0][18] ← stack[-5]
+// 205 GET_VAR → stack[-5] = scope[2][3]
+// 207 GET_PROP_NAME stack[-5] ← stack[-5]["slardarErrs"]
+// 210 DUP → stack[-4] = stack[-5]
+// 210 GET_PROP_NAME stack[-4] ← stack[-4]["push"]
+// 213 NEW_OBJECT → stack[-3] = {}
+// 214 GET_VAR → stack[-2] = scope[0][18]
+// 216 DEFINE_PROP Object.defineProperty(stack[-3], "err", stack[-2])
+// 218 PUSH_STRING → stack[-2] = "s_p"
+// 220 DEFINE_PROP Object.defineProperty(stack[-3], "type", stack[-2])
+// 223 CALL func.apply(thisArg, [1 args]) → stack[-5]
+// 225 POP stack[-5]
+// 226 PUSH_UNDEFINED → stack[-5] = undefined
+// 227 GET_VAR → stack[-4] = scope[2][6]
+// 230 CALL func.apply(thisArg, [0 args]) → stack[-5]
+// 232 SET_VAR scope[0][9] ← stack[-5]
+// 234 JUMP → JUMP_TO=259
+// 237 SET_VAR scope[0][19] ← stack[-6]
+// 240 GET_VAR → stack[-6] = scope[2][3]
+// 242 GET_PROP_NAME stack[-6] ← stack[-6]["slardarErrs"]
+// 245 DUP → stack[-5] = stack[-6]
+// 245 GET_PROP_NAME stack[-5] ← stack[-5]["push"]
+// 248 NEW_OBJECT → stack[-4] = {}
+// 249 GET_VAR → stack[-3] = scope[0][19]
+// 251 DEFINE_PROP Object.defineProperty(stack[-4], "err", stack[-3])
+// 253 PUSH_STRING → stack[-3] = "s_w"
+// 255 DEFINE_PROP Object.defineProperty(stack[-4], "type", stack[-3])
+// 258 CALL func.apply(thisArg, [1 args]) → stack[-6]
+// 260 POP stack[-6]
+// 261 PUSH_UNDEFINED → stack[-6] = undefined
+// 262 GET_VAR → stack[-5] = scope[2][8]
+// 265 CALL func.apply(thisArg, [0 args]) → stack[-6]
+// 267 SET_VAR scope[0][11] ← stack[-6]
+// 269 JUMP → JUMP_TO=294
+// 272 SET_VAR scope[0][20] ← stack[-7]
+// 275 GET_VAR → stack[-7] = scope[2][3]
+// 277 GET_PROP_NAME stack[-7] ← stack[-7]["slardarErrs"]
+// 280 DUP → stack[-6] = stack[-7]
+// 280 GET_PROP_NAME stack[-6] ← stack[-6]["push"]
+// 283 NEW_OBJECT → stack[-5] = {}
+// 284 GET_VAR → stack[-4] = scope[0][20]
+// 286 DEFINE_PROP Object.defineProperty(stack[-5], "err", stack[-4])
+// 288 PUSH_STRING → stack[-4] = "s_h"
+// 290 DEFINE_PROP Object.defineProperty(stack[-5], "type", stack[-4])
+// 293 CALL func.apply(thisArg, [1 args]) → stack[-7]
+// 295 POP stack[-7]
+// 296 PUSH_UNDEFINED → stack[-7] = undefined
+// 297 GET_VAR → stack[-6] = scope[2][9]
+// 300 CALL func.apply(thisArg, [0 args]) → stack[-7]
+// 302 SET_VAR scope[0][3] ← stack[-7]
+// 304 JUMP → JUMP_TO=329
+// 307 SET_VAR scope[0][21] ← stack[-8]
+// 310 GET_VAR → stack[-8] = scope[2][3]
+// 312 GET_PROP_NAME stack[-8] ← stack[-8]["slardarErrs"]
+// 315 DUP → stack[-7] = stack[-8]
+// 315 GET_PROP_NAME stack[-7] ← stack[-7]["push"]
+// 318 NEW_OBJECT → stack[-6] = {}
+// 319 GET_VAR → stack[-5] = scope[0][21]
+// 321 DEFINE_PROP Object.defineProperty(stack[-6], "err", stack[-5])
+// 323 PUSH_STRING → stack[-5] = "s_l"
+// 325 DEFINE_PROP Object.defineProperty(stack[-6], "type", stack[-5])
+// 328 CALL func.apply(thisArg, [1 args]) → stack[-8]
+// 330 POP stack[-8]
+// 331 PUSH_UNDEFINED → stack[-8] = undefined
+// 332 GET_VAR → stack[-7] = scope[2][11]
+// 335 CALL func.apply(thisArg, [0 args]) → stack[-8]
+// 337 SET_VAR scope[0][2] ← stack[-8]
+// 339 JUMP → JUMP_TO=364
+// 342 SET_VAR scope[0][22] ← stack[-9]
+// 345 GET_VAR → stack[-9] = scope[2][3]
+// 347 GET_PROP_NAME stack[-9] ← stack[-9]["slardarErrs"]
+// 350 DUP → stack[-8] = stack[-9]
+// 350 GET_PROP_NAME stack[-8] ← stack[-8]["push"]
+// 353 NEW_OBJECT → stack[-7] = {}
+// 354 GET_VAR → stack[-6] = scope[0][22]
+// 356 DEFINE_PROP Object.defineProperty(stack[-7], "err", stack[-6])
+// 358 PUSH_STRING → stack[-6] = "s_c"
+// 360 DEFINE_PROP Object.defineProperty(stack[-7], "type", stack[-6])
+// 363 CALL func.apply(thisArg, [1 args]) → stack[-9]
+// 365 POP stack[-9]
+// 366 PUSH_UNDEFINED → stack[-9] = undefined
+// 367 GET_VAR → stack[-8] = scope[2][10]
+// 370 CALL func.apply(thisArg, [0 args]) → stack[-9]
+// 372 SET_VAR scope[0][12] ← stack[-9]
+// 374 JUMP → JUMP_TO=399
+// 377 SET_VAR scope[0][23] ← stack[-10]
+// 380 GET_VAR → stack[-10] = scope[2][3]
+// 382 GET_PROP_NAME stack[-10] ← stack[-10]["slardarErrs"]
+// 385 DUP → stack[-9] = stack[-10]
+// 385 GET_PROP_NAME stack[-9] ← stack[-9]["push"]
+// 388 NEW_OBJECT → stack[-8] = {}
+// 389 GET_VAR → stack[-7] = scope[0][23]
+// 391 DEFINE_PROP Object.defineProperty(stack[-8], "err", stack[-7])
+// 393 PUSH_STRING → stack[-7] = "s_u"
+// 395 DEFINE_PROP Object.defineProperty(stack[-8], "type", stack[-7])
+// 398 CALL func.apply(thisArg, [1 args]) → stack[-10]
+// 400 POP stack[-10]
+// 400 PUSH_CONST → stack[-10] = 0
+// 403 SET_VAR scope[0][13] ← stack[-10]
+// 406 GET_VAR → stack[-10] = scope[0][13]
+// 408 PUSH_CONST → stack[-9] = 1
+// 411 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 411 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 415 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 416 POP stack[-10]
+// 417 GET_VAR → stack[-10] = scope[0][13]
+// 420 GET_VAR → stack[-9] = scope[0][11]
+// 422 PUSH_CONST → stack[-8] = 1
+// 425 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 426 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 426 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 430 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 431 POP stack[-10]
+// 432 GET_VAR → stack[-10] = scope[0][13]
+// 435 GET_VAR → stack[-9] = scope[0][10]
+// 437 PUSH_CONST → stack[-8] = 2
+// 440 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 441 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 441 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 445 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 446 POP stack[-10]
+// 447 GET_VAR → stack[-10] = scope[0][13]
+// 450 GET_VAR → stack[-9] = scope[0][9]
+// 452 PUSH_CONST → stack[-8] = 3
+// 455 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 456 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 456 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 460 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 461 POP stack[-10]
+// 462 GET_VAR → stack[-10] = scope[0][13]
+// 465 GET_VAR → stack[-9] = scope[0][8]
+// 467 PUSH_CONST → stack[-8] = 4
+// 470 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 471 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 471 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 475 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 476 POP stack[-10]
+// 477 GET_VAR → stack[-10] = scope[0][13]
+// 480 GET_VAR → stack[-9] = scope[0][7]
+// 482 PUSH_CONST → stack[-8] = 5
+// 485 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 486 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 486 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 490 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 491 POP stack[-10]
+// 492 GET_VAR → stack[-10] = scope[0][13]
+// 495 GET_VAR → stack[-9] = scope[0][6]
+// 497 PUSH_CONST → stack[-8] = 6
+// 500 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 501 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 501 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 505 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 506 POP stack[-10]
+// 507 GET_VAR → stack[-10] = scope[0][13]
+// 510 GET_VAR → stack[-9] = scope[0][5]
+// 512 PUSH_CONST → stack[-8] = 7
+// 515 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 516 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 516 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 520 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 521 POP stack[-10]
+// 522 GET_VAR → stack[-10] = scope[0][13]
+// 525 GET_VAR → stack[-9] = scope[0][4]
+// 527 PUSH_CONST → stack[-8] = 8
+// 530 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 531 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 531 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 535 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 536 POP stack[-10]
+// 537 GET_VAR → stack[-10] = scope[0][13]
+// 540 GET_VAR → stack[-9] = scope[0][3]
+// 542 PUSH_CONST → stack[-8] = 9
+// 545 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 546 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 546 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 550 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 551 POP stack[-10]
+// 552 GET_VAR → stack[-10] = scope[0][13]
+// 555 GET_VAR → stack[-9] = scope[0][2]
+// 557 PUSH_CONST → stack[-8] = 10
+// 560 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 561 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 561 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 565 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 566 POP stack[-10]
+// 567 GET_VAR → stack[-10] = scope[0][13]
+// 570 GET_VAR → stack[-9] = scope[0][12]
+// 572 PUSH_CONST → stack[-8] = 12
+// 575 LEFT_SHIFT stack[-9] = stack[-9] << stack[-8]
+// 576 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 576 PUSH_SCOPE_REF → stack[-9] = scope[0], stack[-8] = 13
+// 580 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 581 POP stack[-10]
+// 582 GET_VAR → stack[-10] = scope[2][2]
+// 584 GET_PROP_NAME stack[-10] ← stack[-10]["envcode"]
+// 587 GET_VAR → stack[-9] = scope[0][13]
+// 590 BITWISE_OR stack[-10] = stack[-10] | stack[-9]
+// 591 GET_VAR → stack[-9] = scope[2][2]
+// 593 PUSH_STRING → stack[-8] = "envcode"
+// 596 SET_PROP_NO_POP stack[-9][stack[-8]] = stack[-10] (keep value)
+// 597 POP stack[-10]
+// 598 NEW_OBJECT → stack[-10] = {}
+// 599 GET_VAR → stack[-9] = scope[0][11]
+// 601 DEFINE_PROP Object.defineProperty(stack[-10], "hook", stack[-9])
+// 604 GET_VAR → stack[-9] = scope[0][10]
+// 606 DEFINE_PROP Object.defineProperty(stack[-10], "incognito", stack[-9])
+// 609 GET_VAR → stack[-9] = scope[0][9]
+// 611 DEFINE_PROP Object.defineProperty(stack[-10], "webdriver", stack[-9])
+// 614 GET_VAR → stack[-9] = scope[0][8]
+// 616 DEFINE_PROP Object.defineProperty(stack[-10], "phantom", stack[-9])
+// 619 GET_VAR → stack[-9] = scope[0][7]
+// 621 DEFINE_PROP Object.defineProperty(stack[-10], "node", stack[-9])
+// 624 GET_VAR → stack[-9] = scope[0][6]
+// 626 DEFINE_PROP Object.defineProperty(stack[-10], "debugger_", stack[-9])
+// 629 GET_VAR → stack[-9] = scope[0][5]
+// 631 DEFINE_PROP Object.defineProperty(stack[-10], "dom", stack[-9])
+// 634 GET_VAR → stack[-9] = scope[0][4]
+// 636 DEFINE_PROP Object.defineProperty(stack[-10], "switch_", stack[-9])
+// 639 GET_VAR → stack[-9] = scope[0][3]
+// 641 DEFINE_PROP Object.defineProperty(stack[-10], "location", stack[-9])
+// 644 GET_VAR → stack[-9] = scope[0][2]
+// 646 DEFINE_PROP Object.defineProperty(stack[-10], "consistent", stack[-9])
+// 649 GET_VAR → stack[-9] = scope[0][12]
+// 651 DEFINE_PROP Object.defineProperty(stack[-10], "undetectChromeDriver", stack[-9])
+// 654 RETURN stack[-10]
+------------------------260--------------------------
+// 0 GET_GLOBAL → stack[0] = navigator
+// 2 GET_PROP_NAME stack[0] ← stack[0]["userAgent"]
+// 5 DUP → stack[1] = stack[0]
+// 5 GET_PROP_NAME stack[1] ← stack[1]["toLowerCase"]
+// 8 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 10 SET_VAR scope[0][2] ← stack[0]
+// 13 GET_VAR → stack[0] = scope[0][2]
+// 16 DUP → stack[1] = stack[0]
+// 16 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 18 PUSH_STRING → stack[2] = "electron"
+// 21 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 22 PUSH_CONST → stack[1] = 0
+// 25 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 25 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=27
+// 28 PUSH_FALSE → stack[0] = false
+// 29 RETURN stack[0]
+// 29 PUSH_STRING → stack[0] = "undefined"
+// 32 SET_VAR scope[0][3] ← stack[0]
+// 34 TYPEOF_GLOBAL → stack[0] = typeof global["window"]
+// 36 PUSH_STRING → stack[1] = "undefined"
+// 39 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 39 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=43
+// 41 PUSH_STRING → stack[0] = "undefined"
+// 43 JUMP → JUMP_TO=52
+// 46 PUSH_UNDEFINED → stack[1] = undefined
+// 47 GET_VAR → stack[2] = scope[2][0]
+// 49 GET_GLOBAL → stack[3] = window
+// 52 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 54 GET_VAR → stack[2] = scope[0][3]
+// 57 STRICT_EQUAL stack[1] = stack[1] === stack[2]
+// 57 JUMP_IF_TRUE_OR_POP if (stack[1]) JUMP_TO=67 else POP
+// 59 GET_GLOBAL → stack[1] = window
+// 62 DUP → stack[2] = stack[1]
+// 62 GET_PROP_NAME stack[2] ← stack[2]["toString"]
+// 65 CALL func.apply(thisArg, [0 args]) → stack[1]
+// 66 PUSH_STRING → stack[2] = "[object Window]"
+// 69 STRICT_NOT_EQUAL stack[1] = stack[1] !== stack[2]
+// 69 JUMP_IF_TRUE_OR_POP if (stack[1]) JUMP_TO=85 else POP
+// 71 GET_GLOBAL → stack[1] = Object
+// 73 GET_PROP_NAME stack[1] ← stack[1]["prototype"]
+// 75 GET_PROP_NAME stack[1] ← stack[1]["toString"]
+// 78 DUP → stack[2] = stack[1]
+// 78 GET_PROP_NAME stack[2] ← stack[2]["call"]
+// 80 GET_GLOBAL → stack[3] = window
+// 83 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 84 PUSH_STRING → stack[2] = "[object Window]"
+// 87 STRICT_NOT_EQUAL stack[1] = stack[1] !== stack[2]
+// 87 JUMP_IF_TRUE_OR_POP if (stack[1]) JUMP_TO=110 else POP
+// 89 TYPEOF_GLOBAL → stack[1] = typeof global["document"]
+// 91 PUSH_STRING → stack[2] = "undefined"
+// 94 STRICT_EQUAL stack[1] = stack[1] === stack[2]
+// 94 JUMP_IF_FALSE if (!stack[1]) JUMP_TO=98
+// 96 PUSH_STRING → stack[1] = "undefined"
+// 98 JUMP → JUMP_TO=107
+// 101 PUSH_UNDEFINED → stack[2] = undefined
+// 102 GET_VAR → stack[3] = scope[2][0]
+// 104 GET_GLOBAL → stack[4] = document
+// 107 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 109 GET_VAR → stack[3] = scope[0][3]
+// 112 STRICT_EQUAL stack[2] = stack[2] === stack[3]
+// 112 JUMP_IF_TRUE_OR_POP if (stack[2]) JUMP_TO=129 else POP
+// 114 GET_GLOBAL → stack[2] = document
+// 117 DUP → stack[3] = stack[2]
+// 117 GET_PROP_NAME stack[3] ← stack[3]["toString"]
+// 120 CALL func.apply(thisArg, [0 args]) → stack[2]
+// 122 DUP → stack[3] = stack[2]
+// 122 GET_PROP_NAME stack[3] ← stack[3]["indexOf"]
+// 124 PUSH_STRING → stack[4] = "Document"
+// 127 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 128 PUSH_CONST → stack[3] = 0
+// 131 LESS_THAN stack[2] = stack[2] < stack[3]
+// 131 JUMP_IF_TRUE_OR_POP if (stack[2]) JUMP_TO=154 else POP
+// 133 TYPEOF_GLOBAL → stack[2] = typeof global["navigator"]
+// 135 PUSH_STRING → stack[3] = "undefined"
+// 138 STRICT_EQUAL stack[2] = stack[2] === stack[3]
+// 138 JUMP_IF_FALSE if (!stack[2]) JUMP_TO=142
+// 140 PUSH_STRING → stack[2] = "undefined"
+// 142 JUMP → JUMP_TO=151
+// 145 PUSH_UNDEFINED → stack[3] = undefined
+// 146 GET_VAR → stack[4] = scope[2][0]
+// 148 GET_GLOBAL → stack[5] = navigator
+// 151 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 153 GET_VAR → stack[4] = scope[0][3]
+// 156 STRICT_EQUAL stack[3] = stack[3] === stack[4]
+// 156 JUMP_IF_TRUE_OR_POP if (stack[3]) JUMP_TO=166 else POP
+// 158 GET_GLOBAL → stack[3] = navigator
+// 161 DUP → stack[4] = stack[3]
+// 161 GET_PROP_NAME stack[4] ← stack[4]["toString"]
+// 164 CALL func.apply(thisArg, [0 args]) → stack[3]
+// 165 PUSH_STRING → stack[4] = "[object Navigator]"
+// 168 STRICT_NOT_EQUAL stack[3] = stack[3] !== stack[4]
+// 168 JUMP_IF_TRUE_OR_POP if (stack[3]) JUMP_TO=182 else POP
+// 170 GET_GLOBAL → stack[3] = navigator
+// 172 GET_PROP_NAME stack[3] ← stack[3]["userAgent"]
+// 175 DUP → stack[4] = stack[3]
+// 175 GET_PROP_NAME stack[4] ← stack[4]["indexOf"]
+// 177 PUSH_STRING → stack[5] = "jsdom"
+// 180 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 181 PUSH_CONST → stack[4] = 0
+// 184 GREATER_EQUAL stack[3] = stack[3] >= stack[4]
+// 184 JUMP_IF_TRUE_OR_POP if (stack[3]) JUMP_TO=207 else POP
+// 186 TYPEOF_GLOBAL → stack[3] = typeof global["location"]
+// 188 PUSH_STRING → stack[4] = "undefined"
+// 191 STRICT_EQUAL stack[3] = stack[3] === stack[4]
+// 191 JUMP_IF_FALSE if (!stack[3]) JUMP_TO=195
+// 193 PUSH_STRING → stack[3] = "undefined"
+// 195 JUMP → JUMP_TO=204
+// 198 PUSH_UNDEFINED → stack[4] = undefined
+// 199 GET_VAR → stack[5] = scope[2][0]
+// 201 GET_GLOBAL → stack[6] = location
+// 204 CALL func.apply(thisArg, [1 args]) → stack[4]
+// 206 GET_VAR → stack[5] = scope[0][3]
+// 209 STRICT_EQUAL stack[4] = stack[4] === stack[5]
+// 209 JUMP_IF_FALSE if (!stack[4]) JUMP_TO=211
+// 212 PUSH_TRUE → stack[4] = true
+// 213 RETURN stack[4]
+// 214 PUSH_UNDEFINED → stack[4] = undefined
+// 215 GET_VAR → stack[5] = scope[2][1]
+// 218 CALL func.apply(thisArg, [0 args]) → stack[4]
+// 220 NOT stack[4] = !stack[4]
+// 220 JUMP_IF_FALSE if (!stack[4]) JUMP_TO=259
+// 222 TYPEOF_GLOBAL → stack[4] = typeof global["history"]
+// 224 PUSH_STRING → stack[5] = "undefined"
+// 227 STRICT_EQUAL stack[4] = stack[4] === stack[5]
+// 227 JUMP_IF_FALSE if (!stack[4]) JUMP_TO=231
+// 229 PUSH_STRING → stack[4] = "undefined"
+// 231 JUMP → JUMP_TO=240
+// 234 PUSH_UNDEFINED → stack[5] = undefined
+// 235 GET_VAR → stack[6] = scope[2][0]
+// 237 GET_GLOBAL → stack[7] = history
+// 240 CALL func.apply(thisArg, [1 args]) → stack[5]
+// 242 GET_VAR → stack[6] = scope[0][3]
+// 245 STRICT_EQUAL stack[5] = stack[5] === stack[6]
+// 245 JUMP_IF_TRUE_OR_POP if (stack[5]) JUMP_TO=255 else POP
+// 247 GET_GLOBAL → stack[5] = history
+// 250 DUP → stack[6] = stack[5]
+// 250 GET_PROP_NAME stack[6] ← stack[6]["toString"]
+// 253 CALL func.apply(thisArg, [0 args]) → stack[5]
+// 254 PUSH_STRING → stack[6] = "[object History]"
+// 257 STRICT_NOT_EQUAL stack[5] = stack[5] !== stack[6]
+// 257 JUMP_IF_FALSE if (!stack[5]) JUMP_TO=259
+// 260 PUSH_TRUE → stack[5] = true
+// 261 RETURN stack[5]
+// 262 PUSH_FALSE → stack[5] = false
+// 263 RETURN stack[5]
+------------------------218--------------------------
+// 0 GET_GLOBAL → stack[0] = navigator
+// 2 GET_PROP_NAME stack[0] ← stack[0]["userAgent"]
+// 5 DUP → stack[1] = stack[0]
+// 5 GET_PROP_NAME stack[1] ← stack[1]["toLowerCase"]
+// 8 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 10 DUP → stack[1] = stack[0]
+// 10 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 12 PUSH_STRING → stack[2] = "MSIE"
+// 15 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 16 PUSH_CONST → stack[1] = 0
+// 19 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 19 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=25 else POP
+// 21 GET_GLOBAL → stack[0] = document
+// 23 GET_PROP_NAME stack[0] ← stack[0]["documentMode"]
+// 26 NOT stack[0] = !stack[0]
+// 27 NOT stack[0] = !stack[0]
+// 28 RETURN stack[0]
+------------------------255--------------------------
+// 1 PUSH_FALSE → stack[0] = false
+// 2 SET_VAR scope[0][2] ← stack[0]
+// 5 PUSH_UNDEFINED → stack[0] = undefined
+// 6 GET_VAR → stack[1] = scope[1][3]
+// 9 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 10 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=12
+// 13 PUSH_UNDEFINED → stack[0] = undefined
+// 14 RETURN stack[0]
+// 14 PUSH_CONST → stack[0] = 1
+// 16 PUSH_CONST → stack[1] = 6
+// 19 LEFT_SHIFT stack[0] = stack[0] << stack[1]
+// 20 SET_VAR scope[0][3] ← stack[0]
+// 23 GET_VAR → stack[0] = scope[2][1]
+// 25 GET_PROP_NAME stack[0] ← stack[0]["envcode"]
+// 28 GET_VAR → stack[1] = scope[0][3]
+// 30 PUSH_CONST → stack[2] = 0
+// 33 GREATER_THAN stack[1] = stack[1] > stack[2]
+// 34 BITWISE_AND stack[0] = stack[0] & stack[1]
+// 34 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=40
+// 37 PUSH_TRUE → stack[0] = true
+// 38 SET_VAR scope[0][2] ← stack[0]
+// 41 PUSH_UNDEFINED → stack[0] = undefined
+// 42 RETURN stack[0]
+// 42 GET_GLOBAL → stack[0] = Image
+// 45 FUNCTION_BIND_APPLY → stack[0] = new stack[0](0 args)
+// 47 SET_VAR scope[0][4] ← stack[0]
+// 49 GET_GLOBAL → stack[0] = Object
+// 52 DUP → stack[1] = stack[0]
+// 52 GET_PROP_NAME stack[1] ← stack[1]["defineProperty"]
+// 55 GET_VAR → stack[2] = scope[0][4]
+// 57 PUSH_STRING → stack[3] = "id"
+// 60 NEW_OBJECT → stack[4] = {}
+// 60 PUSH_FUNCTION → stack[5] = function[256]
+// 63 DUP → stack[6] = stack[5]
+// 64 SET_VAR scope[0][5] ← stack[6]
+// 66 DEFINE_PROP Object.defineProperty(stack[4], "get", stack[5])
+// 69 CALL func.apply(thisArg, [3 args]) → stack[0]
+// 71 POP stack[0]
+// 71 GET_GLOBAL → stack[0] = console
+// 74 DUP → stack[1] = stack[0]
+// 74 GET_PROP_NAME stack[1] ← stack[1]["info"]
+// 76 PUSH_STRING → stack[2] = "%c"
+// 79 GET_VAR → stack[3] = scope[0][4]
+// 82 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 84 POP stack[0]
+// 84 GET_GLOBAL → stack[0] = window
+// 86 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=90
+// 88 GET_GLOBAL → stack[0] = window
+// 90 GET_PROP_NAME stack[0] ← stack[0]["console"]
+// 92 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=98
+// 94 GET_GLOBAL → stack[0] = window
+// 96 GET_PROP_NAME stack[0] ← stack[0]["console"]
+// 98 GET_PROP_NAME stack[0] ← stack[0]["firebug"]
+// 100 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=104
+// 103 PUSH_TRUE → stack[0] = true
+// 104 SET_VAR scope[0][2] ← stack[0]
+// 107 PUSH_UNDEFINED → stack[0] = undefined
+// 108 GET_VAR → stack[1] = scope[2][0]
+// 111 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 112 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=148
+// 114 GET_GLOBAL → stack[0] = window
+// 116 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=142
+// 118 GET_GLOBAL → stack[0] = window
+// 120 GET_PROP_NAME stack[0] ← stack[0]["outerWidth"]
+// 122 GET_GLOBAL → stack[1] = window
+// 124 GET_PROP_NAME stack[1] ← stack[1]["innerWidth"]
+// 127 SUB stack[0] = stack[0] - stack[1]
+// 127 PUSH_CONST → stack[1] = 100
+// 130 GREATER_THAN stack[0] = stack[0] > stack[1]
+// 130 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=142 else POP
+// 132 GET_GLOBAL → stack[0] = window
+// 134 GET_PROP_NAME stack[0] ← stack[0]["outerHeight"]
+// 136 GET_GLOBAL → stack[1] = window
+// 138 GET_PROP_NAME stack[1] ← stack[1]["innerHeight"]
+// 141 SUB stack[0] = stack[0] - stack[1]
+// 141 PUSH_CONST → stack[1] = 100
+// 144 GREATER_THAN stack[0] = stack[0] > stack[1]
+// 144 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=148
+// 147 PUSH_TRUE → stack[0] = true
+// 148 SET_VAR scope[0][2] ← stack[0]
+// 151 GET_VAR → stack[0] = scope[0][2]
+// 154 RETURN stack[0]
+------------------------254--------------------------
+// 1 GET_VAR → stack[0] = scope[1][2]
+// 3 PUSH_CONST → stack[1] = 0
+// 6 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 6 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=103
+// 8 PUSH_CONST → stack[0] = 1
+// 11 NEGATE stack[0] = -stack[0]
+// 12 SET_VAR scope[1][2] ← stack[0]
+// 14 GET_GLOBAL → stack[0] = RegExp
+// 16 PUSH_STRING → stack[1] = "chrome\/\d+\."
+// 18 PUSH_STRING → stack[2] = "gi"
+// 21 FUNCTION_BIND_APPLY → stack[0] = new stack[2](2 args)
+// 23 SET_VAR scope[0][2] ← stack[0]
+// 25 GET_GLOBAL → stack[0] = navigator
+// 27 GET_PROP_NAME stack[0] ← stack[0]["userAgent"]
+// 30 DUP → stack[1] = stack[0]
+// 30 GET_PROP_NAME stack[1] ← stack[1]["toLowerCase"]
+// 33 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 35 SET_VAR scope[0][3] ← stack[0]
+// 38 GET_VAR → stack[0] = scope[0][3]
+// 41 DUP → stack[1] = stack[0]
+// 41 GET_PROP_NAME stack[1] ← stack[1]["match"]
+// 44 GET_VAR → stack[2] = scope[0][2]
+// 47 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 49 SET_VAR scope[0][4] ← stack[0]
+// 52 GET_VAR → stack[0] = scope[0][4]
+// 54 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=103
+// 57 GET_VAR → stack[0] = scope[0][4]
+// 59 GET_PROP_NAME stack[0] ← stack[0]["0"]
+// 62 DUP → stack[1] = stack[0]
+// 62 GET_PROP_NAME stack[1] ← stack[1]["replace"]
+// 64 PUSH_STRING → stack[2] = "chrome/"
+// 66 PUSH_STRING → stack[3] = ""
+// 69 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 71 DUP → stack[1] = stack[0]
+// 71 GET_PROP_NAME stack[1] ← stack[1]["replace"]
+// 73 PUSH_STRING → stack[2] = "."
+// 75 PUSH_STRING → stack[3] = ""
+// 78 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 80 SET_VAR scope[0][5] ← stack[0]
+// 83 PUSH_UNDEFINED → stack[0] = undefined
+// 83 GET_GLOBAL → stack[1] = parseInt
+// 86 GET_VAR → stack[2] = scope[0][5]
+// 89 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 90 PUSH_CONST → stack[1] = 91
+// 93 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 93 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=98
+// 95 PUSH_CONST → stack[0] = 1
+// 98 SET_VAR scope[1][2] ← stack[0]
+// 100 JUMP → JUMP_TO=104
+// 103 SET_VAR scope[0][6] ← stack[-1]
+// 106 GET_VAR → stack[-1] = scope[1][2]
+// 108 PUSH_CONST → stack[0] = 1
+// 111 STRICT_EQUAL stack[-1] = stack[-1] === stack[0]
+// 111 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=113
+// 114 PUSH_TRUE → stack[-1] = true
+// 115 RETURN stack[-1]
+// 116 PUSH_FALSE → stack[-1] = false
+// 117 RETURN stack[-1]
+------------------------264--------------------------
+// 1 PUSH_FALSE → stack[0] = false
+// 2 SET_VAR scope[0][2] ← stack[0]
+// 5 PUSH_UNDEFINED → stack[0] = undefined
+// 6 GET_VAR → stack[1] = scope[2][2]
+// 9 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 10 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=29
+// 12 GET_GLOBAL → stack[0] = indexedDB
+// 15 DUP → stack[1] = stack[0]
+// 15 GET_PROP_NAME stack[1] ← stack[1]["open"]
+// 17 PUSH_STRING → stack[2] = "test"
+// 20 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 22 SET_VAR scope[0][3] ← stack[0]
+// 25 GET_VAR → stack[0] = scope[0][3]
+// 27 PUSH_FUNCTION → stack[1] = function[265]
+// 29 SET_GLOBAL_PROP stack[1]["onerror"] ← stack[0]
+// 32 PUSH_UNDEFINED → stack[0] = undefined
+// 33 GET_VAR → stack[1] = scope[2][0]
+// 36 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 37 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=95
+// 39 GET_GLOBAL → stack[0] = window
+// 41 GET_PROP_NAME stack[0] ← stack[0]["sessionStorage"]
+// 44 DUP → stack[1] = stack[0]
+// 44 GET_PROP_NAME stack[1] ← stack[1]["setItem"]
+// 46 PUSH_STRING → stack[2] = "someKeyHereByted"
+// 48 PUSH_STRING → stack[3] = ""
+// 51 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 53 POP stack[0]
+// 53 GET_GLOBAL → stack[0] = window
+// 55 GET_PROP_NAME stack[0] ← stack[0]["sessionStorage"]
+// 58 DUP → stack[1] = stack[0]
+// 58 GET_PROP_NAME stack[1] ← stack[1]["removeItem"]
+// 60 PUSH_STRING → stack[2] = "someKeyHereByted"
+// 63 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 65 POP stack[0]
+// 65 JUMP → JUMP_TO=96
+// 68 SET_VAR scope[0][4] ← stack[-1]
+// 71 GET_VAR → stack[-1] = scope[0][4]
+// 73 GET_PROP_NAME stack[-1] ← stack[-1]["code"]
+// 75 GET_GLOBAL → stack[0] = DOMException
+// 77 GET_PROP_NAME stack[0] ← stack[0]["QUOTA_EXCEEDED_ERR"]
+// 80 STRICT_EQUAL stack[-1] = stack[-1] === stack[0]
+// 80 JUMP_IF_FALSE_OR_POP if (stack[-1]) POP else JUMP_TO=89
+// 82 GET_GLOBAL → stack[-1] = window
+// 84 GET_PROP_NAME stack[-1] ← stack[-1]["sessionStorage"]
+// 86 GET_PROP_NAME stack[-1] ← stack[-1]["length"]
+// 88 PUSH_CONST → stack[0] = 0
+// 91 STRICT_EQUAL stack[-1] = stack[-1] === stack[0]
+// 91 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=95
+// 94 PUSH_TRUE → stack[-1] = true
+// 95 SET_VAR scope[0][2] ← stack[-1]
+// 98 PUSH_UNDEFINED → stack[-1] = undefined
+// 99 GET_VAR → stack[0] = scope[2][1]
+// 102 CALL func.apply(thisArg, [0 args]) → stack[-1]
+// 103 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=126
+// 105 GET_GLOBAL → stack[-1] = window
+// 107 GET_PROP_NAME stack[-1] ← stack[-1]["indexedDB"]
+// 110 NOT stack[-1] = !stack[-1]
+// 110 JUMP_IF_FALSE_OR_POP if (stack[-1]) POP else JUMP_TO=120
+// 112 GET_GLOBAL → stack[-1] = window
+// 114 GET_PROP_NAME stack[-1] ← stack[-1]["PointerEvent"]
+// 116 JUMP_IF_TRUE_OR_POP if (stack[-1]) JUMP_TO=120 else POP
+// 118 GET_GLOBAL → stack[-1] = window
+// 120 GET_PROP_NAME stack[-1] ← stack[-1]["MSPointerEvent"]
+// 122 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=126
+// 125 PUSH_TRUE → stack[-1] = true
+// 126 SET_VAR scope[0][2] ← stack[-1]
+// 129 GET_VAR → stack[-1] = scope[0][2]
+// 132 RETURN stack[-1]
+------------------------219--------------------------
+// 0 TYPEOF_GLOBAL → stack[0] = typeof global["InstallTrigger"]
+// 2 PUSH_STRING → stack[1] = "undefined"
+// 5 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 6 RETURN stack[0]
+------------------------220--------------------------
+// 0 GET_GLOBAL → stack[0] = RegExp
+// 2 PUSH_STRING → stack[1] = "constructor"
+// 4 PUSH_STRING → stack[2] = "i"
+// 7 FUNCTION_BIND_APPLY → stack[0] = new stack[2](2 args)
+// 9 DUP → stack[1] = stack[0]
+// 9 GET_PROP_NAME stack[1] ← stack[1]["test"]
+// 11 GET_GLOBAL → stack[2] = window
+// 13 GET_PROP_NAME stack[2] ← stack[2]["HTMLElement"]
+// 16 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 17 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=40 else POP
+// 20 PUSH_UNDEFINED → stack[0] = undefined
+// 20 PUSH_FUNCTION → stack[1] = function[221]
+// 22 GET_GLOBAL → stack[2] = window
+// 24 GET_PROP_NAME stack[2] ← stack[2]["safari"]
+// 27 NOT stack[2] = !stack[2]
+// 27 JUMP_IF_TRUE_OR_POP if (stack[2]) JUMP_TO=38 else POP
+// 29 TYPEOF_GLOBAL → stack[2] = typeof global["safari"]
+// 31 PUSH_STRING → stack[3] = "undefined"
+// 34 STRICT_NOT_EQUAL stack[2] = stack[2] !== stack[3]
+// 34 JUMP_IF_FALSE_OR_POP if (stack[2]) POP else JUMP_TO=38
+// 36 GET_GLOBAL → stack[2] = safari
+// 38 GET_PROP_NAME stack[2] ← stack[2]["pushNotification"]
+// 41 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 43 RETURN stack[0]
+// 43 JUMP → JUMP_TO=47
+// 46 SET_VAR scope[0][2] ← stack[-1]
+// 49 PUSH_UNDEFINED → stack[-1] = undefined
+// 50 RETURN stack[-1]
+------------------------221--------------------------
+// 1 GET_VAR → stack[0] = scope[0][2]
+// 4 DUP → stack[1] = stack[0]
+// 4 GET_PROP_NAME stack[1] ← stack[1]["toString"]
+// 7 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 8 PUSH_STRING → stack[1] = "[object SafariRemoteNotification]"
+// 11 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 12 RETURN stack[0]
+------------------------258--------------------------
+// 0 GET_GLOBAL → stack[0] = navigator
+// 2 GET_PROP_NAME stack[0] ← stack[0]["userAgent"]
+// 5 DUP → stack[1] = stack[0]
+// 5 GET_PROP_NAME stack[1] ← stack[1]["toLowerCase"]
+// 8 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 10 SET_VAR scope[0][2] ← stack[0]
+// 13 GET_VAR → stack[0] = scope[0][2]
+// 16 DUP → stack[1] = stack[0]
+// 16 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 18 PUSH_STRING → stack[2] = "electron"
+// 21 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 22 PUSH_CONST → stack[1] = 0
+// 25 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 25 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=27
+// 28 PUSH_FALSE → stack[0] = false
+// 29 RETURN stack[0]
+// 29 TYPEOF_GLOBAL → stack[0] = typeof global["global"]
+// 31 PUSH_STRING → stack[1] = "undefined"
+// 34 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 34 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=52
+// 36 GET_GLOBAL → stack[0] = Object
+// 38 GET_PROP_NAME stack[0] ← stack[0]["prototype"]
+// 40 GET_PROP_NAME stack[0] ← stack[0]["toString"]
+// 43 DUP → stack[1] = stack[0]
+// 43 GET_PROP_NAME stack[1] ← stack[1]["call"]
+// 45 GET_GLOBAL → stack[2] = global
+// 47 GET_PROP_NAME stack[2] ← stack[2]["process"]
+// 50 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 51 PUSH_STRING → stack[1] = "[object process]"
+// 54 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 54 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=85 else POP
+// 56 TYPEOF_GLOBAL → stack[0] = typeof global["process"]
+// 58 PUSH_STRING → stack[1] = "undefined"
+// 61 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 61 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=65
+// 63 PUSH_STRING → stack[0] = "undefined"
+// 65 JUMP → JUMP_TO=74
+// 68 PUSH_UNDEFINED → stack[1] = undefined
+// 69 GET_VAR → stack[2] = scope[2][0]
+// 71 GET_GLOBAL → stack[3] = process
+// 74 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 75 PUSH_STRING → stack[2] = "object"
+// 78 STRICT_EQUAL stack[1] = stack[1] === stack[2]
+// 78 JUMP_IF_FALSE_OR_POP if (stack[1]) POP else JUMP_TO=85
+// 80 GET_GLOBAL → stack[1] = process
+// 82 GET_PROP_NAME stack[1] ← stack[1]["title"]
+// 84 PUSH_STRING → stack[2] = "node"
+// 87 STRICT_EQUAL stack[1] = stack[1] === stack[2]
+// 88 RETURN stack[1]
+------------------------262--------------------------
+// 1 PUSH_UNDEFINED → stack[0] = undefined
+// 2 GET_VAR → stack[1] = scope[2][0]
+// 5 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 7 NOT stack[0] = !stack[0]
+// 7 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=58
+// 9 PUSH_STRING → stack[0] = "plugins"
+// 11 GET_GLOBAL → stack[1] = navigator
+// 14 IN stack[0] = stack[0] in stack[1]
+// 15 NOT stack[0] = !stack[0]
+// 15 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=23 else POP
+// 17 GET_GLOBAL → stack[0] = navigator
+// 19 GET_PROP_NAME stack[0] ← stack[0]["plugins"]
+// 21 GET_GLOBAL → stack[1] = PluginArray
+// 24 INSTANCEOF stack[0] = stack[0] instanceof stack[1]
+// 25 NOT stack[0] = !stack[0]
+// 25 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=30 else POP
+// 27 PUSH_STRING → stack[0] = "_phantom"
+// 29 GET_GLOBAL → stack[1] = window
+// 32 IN stack[0] = stack[0] in stack[1]
+// 32 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=37 else POP
+// 34 PUSH_STRING → stack[0] = "callPhantom"
+// 36 GET_GLOBAL → stack[1] = window
+// 39 IN stack[0] = stack[0] in stack[1]
+// 39 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=44 else POP
+// 41 PUSH_STRING → stack[0] = "__nightmare"
+// 43 GET_GLOBAL → stack[1] = window
+// 46 IN stack[0] = stack[0] in stack[1]
+// 46 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=57 else POP
+// 48 PUSH_STRING → stack[0] = "Audio"
+// 50 GET_GLOBAL → stack[1] = window
+// 53 IN stack[0] = stack[0] in stack[1]
+// 53 PUSH_STRING → stack[1] = "CanvasRenderingContext2D"
+// 55 GET_GLOBAL → stack[2] = window
+// 58 IN stack[1] = stack[1] in stack[2]
+// 59 LESS_THAN stack[0] = stack[0] < stack[1]
+// 60 RETURN stack[0]
+// 61 PUSH_FALSE → stack[0] = false
+// 62 RETURN stack[0]
+------------------------46--------------------------
+// 1 GET_VAR → stack[0] = scope[1][2]
+// 4 PUSH_TRUE → stack[1] = true
+// 5 EQUAL stack[0] = stack[0] == stack[1]
+// 5 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=7
+// 8 PUSH_TRUE → stack[0] = true
+// 9 RETURN stack[0]
+// 9 GET_GLOBAL → stack[0] = navigator
+// 11 GET_PROP_NAME stack[0] ← stack[0]["webdriver"]
+// 13 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=15
+// 16 PUSH_TRUE → stack[0] = true
+// 17 RETURN stack[0]
+// 17 PUSH_STRING → stack[0] = "getOwnPropertyNames"
+// 19 GET_GLOBAL → stack[1] = Object
+// 22 IN stack[0] = stack[0] in stack[1]
+// 22 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=66
+// 24 GET_GLOBAL → stack[0] = Object
+// 27 DUP → stack[1] = stack[0]
+// 27 GET_PROP_NAME stack[1] ← stack[1]["getOwnPropertyNames"]
+// 29 GET_GLOBAL → stack[2] = navigator
+// 32 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 34 SET_VAR scope[0][2] ← stack[0]
+// 37 GET_VAR → stack[0] = scope[0][2]
+// 40 DUP → stack[1] = stack[0]
+// 40 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 42 PUSH_STRING → stack[2] = "webdriver"
+// 45 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 46 PUSH_CONST → stack[1] = 0
+// 49 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 49 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=62 else POP
+// 52 GET_VAR → stack[0] = scope[0][2]
+// 55 DUP → stack[1] = stack[0]
+// 55 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 57 PUSH_STRING → stack[2] = "languages"
+// 60 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 61 PUSH_CONST → stack[1] = 0
+// 64 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 64 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=66
+// 67 PUSH_TRUE → stack[0] = true
+// 68 RETURN stack[0]
+// 68 GET_GLOBAL → stack[0] = window
+// 70 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=74
+// 72 GET_GLOBAL → stack[0] = window
+// 74 GET_PROP_NAME stack[0] ← stack[0]["chrome"]
+// 76 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=82
+// 78 GET_GLOBAL → stack[0] = window
+// 80 GET_PROP_NAME stack[0] ← stack[0]["chrome"]
+// 82 GET_PROP_NAME stack[0] ← stack[0]["runtime"]
+// 84 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=92
+// 86 GET_GLOBAL → stack[0] = window
+// 88 GET_PROP_NAME stack[0] ← stack[0]["chrome"]
+// 90 GET_PROP_NAME stack[0] ← stack[0]["runtime"]
+// 92 GET_PROP_NAME stack[0] ← stack[0]["connect"]
+// 94 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=116
+// 96 GET_GLOBAL → stack[0] = window
+// 98 GET_PROP_NAME stack[0] ← stack[0]["chrome"]
+// 100 GET_PROP_NAME stack[0] ← stack[0]["runtime"]
+// 103 DUP → stack[1] = stack[0]
+// 103 GET_PROP_NAME stack[1] ← stack[1]["connect"]
+// 106 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 108 PUSH_UNDEFINED → stack[1] = undefined
+// 109 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 109 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=111
+// 112 PUSH_TRUE → stack[0] = true
+// 113 RETURN stack[0]
+// 113 JUMP → JUMP_TO=117
+// 116 SET_VAR scope[0][13] ← stack[-1]
+// 118 PUSH_STRING → stack[-1] = "__webdriver_evaluate"
+// 120 PUSH_STRING → stack[0] = "__selenium_evaluate"
+// 122 PUSH_STRING → stack[1] = "__webdriver_script_function"
+// 124 PUSH_STRING → stack[2] = "__webdriver_script_func"
+// 126 PUSH_STRING → stack[3] = "__webdriver_script_fn"
+// 128 PUSH_STRING → stack[4] = "__fxdriver_evaluate"
+// 130 PUSH_STRING → stack[5] = "__driver_unwrapped"
+// 132 PUSH_STRING → stack[6] = "__webdriver_unwrapped"
+// 134 PUSH_STRING → stack[7] = "__driver_evaluate"
+// 136 PUSH_STRING → stack[8] = "__selenium_unwrapped"
+// 138 PUSH_STRING → stack[9] = "__fxdriver_unwrapped"
+// 140 PUSH_STRING → stack[10] = "$chrome_asyncScriptInfo"
+// 142 PUSH_STRING → stack[11] = "__$webdriverAsyncExecutor"
+// 145 NEW_ARRAY → stack[-1] = [...top 13 elements]
+// 147 SET_VAR scope[0][3] ← stack[-1]
+// 149 PUSH_STRING → stack[-1] = "_selenium"
+// 151 PUSH_STRING → stack[0] = "callSelenium"
+// 153 PUSH_STRING → stack[1] = "_Selenium_IDE_Recorder"
+// 155 PUSH_STRING → stack[2] = "domAutomation"
+// 157 PUSH_STRING → stack[3] = "domAutomationController"
+// 159 PUSH_STRING → stack[4] = "__webdriverFunc"
+// 161 PUSH_STRING → stack[5] = "webdriver"
+// 163 PUSH_STRING → stack[6] = "__lastWatirAlert"
+// 165 PUSH_STRING → stack[7] = "__lastWatirConfirm"
+// 167 PUSH_STRING → stack[8] = "__lastWatirPrompt"
+// 169 PUSH_STRING → stack[9] = "_WEBDRIVER_ELEM_CACHE"
+// 172 NEW_ARRAY → stack[-1] = [...top 11 elements]
+// 174 SET_VAR scope[0][4] ← stack[-1]
+// 176 PUSH_CONST → stack[-1] = 0
+// 179 SET_VAR scope[0][5] ← stack[-1]
+// 182 GET_VAR → stack[-1] = scope[0][5]
+// 185 GET_VAR → stack[0] = scope[0][4]
+// 187 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 190 LESS_THAN stack[-1] = stack[-1] < stack[0]
+// 190 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=217
+// 193 GET_VAR → stack[-1] = scope[0][4]
+// 196 GET_VAR → stack[0] = scope[0][5]
+// 199 GET_PROP stack[-1] = stack[-1][stack[0]]
+// 200 SET_VAR scope[0][6] ← stack[-1]
+// 202 GET_GLOBAL → stack[-1] = window
+// 205 GET_VAR → stack[0] = scope[0][6]
+// 208 GET_PROP stack[-1] = stack[-1][stack[0]]
+// 208 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=210
+// 211 PUSH_TRUE → stack[-1] = true
+// 212 RETURN stack[-1]
+// 212 PUSH_SCOPE_REF → stack[-1] = scope[0], stack[0] = 5
+// 216 POST_INC stack[-1] = stack[-1][stack[0]]++ (old value)
+// 217 POP stack[-1]
+// 217 JUMP → JUMP_TO=180
+// 219 PUSH_CONST → stack[-1] = 0
+// 222 SET_VAR scope[0][7] ← stack[-1]
+// 225 GET_VAR → stack[-1] = scope[0][7]
+// 228 GET_VAR → stack[0] = scope[0][3]
+// 230 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 233 LESS_THAN stack[-1] = stack[-1] < stack[0]
+// 233 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=262
+// 236 GET_VAR → stack[-1] = scope[0][3]
+// 239 GET_VAR → stack[0] = scope[0][7]
+// 242 GET_PROP stack[-1] = stack[-1][stack[0]]
+// 243 SET_VAR scope[0][8] ← stack[-1]
+// 245 GET_GLOBAL → stack[-1] = window
+// 247 GET_PROP_NAME stack[-1] ← stack[-1]["document"]
+// 250 GET_VAR → stack[0] = scope[0][8]
+// 253 GET_PROP stack[-1] = stack[-1][stack[0]]
+// 253 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=255
+// 256 PUSH_TRUE → stack[-1] = true
+// 257 RETURN stack[-1]
+// 257 PUSH_SCOPE_REF → stack[-1] = scope[0], stack[0] = 7
+// 261 POST_INC stack[-1] = stack[-1][stack[0]]++ (old value)
+// 262 POP stack[-1]
+// 262 JUMP → JUMP_TO=223
+// 264 GET_GLOBAL → stack[-1] = Object
+// 267 DUP → stack[0] = stack[-1]
+// 267 GET_PROP_NAME stack[0] ← stack[0]["keys"]
+// 269 GET_GLOBAL → stack[1] = window
+// 271 GET_PROP_NAME stack[1] ← stack[1]["document"]
+// 274 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 276 SET_VAR scope[0][9] ← stack[-1]
+// 278 PUSH_CONST → stack[-1] = 0
+// 281 SET_VAR scope[0][10] ← stack[-1]
+// 284 GET_VAR → stack[-1] = scope[0][9]
+// 287 SET_VAR scope[0][11] ← stack[-1]
+// 290 GET_VAR → stack[-1] = scope[0][10]
+// 293 GET_VAR → stack[0] = scope[0][11]
+// 295 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 298 LESS_THAN stack[-1] = stack[-1] < stack[0]
+// 298 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=345
+// 301 GET_VAR → stack[-1] = scope[0][11]
+// 304 GET_VAR → stack[0] = scope[0][10]
+// 307 GET_PROP stack[-1] = stack[-1][stack[0]]
+// 308 SET_VAR scope[0][12] ← stack[-1]
+// 311 GET_VAR → stack[-1] = scope[0][12]
+// 314 DUP → stack[0] = stack[-1]
+// 314 GET_PROP_NAME stack[0] ← stack[0]["match"]
+// 316 GET_GLOBAL → stack[1] = RegExp
+// 318 PUSH_STRING → stack[2] = "\$[a-z]dc_"
+// 321 FUNCTION_BIND_APPLY → stack[1] = new stack[2](1 args)
+// 323 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 324 JUMP_IF_FALSE_OR_POP if (stack[-1]) POP else JUMP_TO=334
+// 326 GET_GLOBAL → stack[-1] = window
+// 328 GET_PROP_NAME stack[-1] ← stack[-1]["document"]
+// 331 GET_VAR → stack[0] = scope[0][12]
+// 334 GET_PROP stack[-1] = stack[-1][stack[0]]
+// 334 GET_PROP_NAME stack[-1] ← stack[-1]["cache_"]
+// 336 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=338
+// 339 PUSH_TRUE → stack[-1] = true
+// 340 RETURN stack[-1]
+// 340 PUSH_SCOPE_REF → stack[-1] = scope[0], stack[0] = 10
+// 344 POST_INC stack[-1] = stack[-1][stack[0]]++ (old value)
+// 345 POP stack[-1]
+// 345 JUMP → JUMP_TO=288
+// 347 GET_GLOBAL → stack[-1] = document
+// 349 GET_PROP_NAME stack[-1] ← stack[-1]["cookie"]
+// 352 DUP → stack[0] = stack[-1]
+// 352 GET_PROP_NAME stack[0] ← stack[0]["indexOf"]
+// 354 PUSH_STRING → stack[1] = "ChromeDriverwjers908fljsdf37459fsdfgdfwru="
+// 357 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 358 PUSH_CONST → stack[0] = 1
+// 361 NEGATE stack[0] = -stack[0]
+// 362 GREATER_THAN stack[-1] = stack[-1] > stack[0]
+// 362 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=364
+// 365 PUSH_TRUE → stack[-1] = true
+// 366 RETURN stack[-1]
+// 366 JUMP → JUMP_TO=370
+// 369 SET_VAR scope[0][14] ← stack[-2]
+// 372 PUSH_FALSE → stack[-2] = false
+// 373 RETURN stack[-2]
+------------------------267--------------------------
+// 1 PUSH_UNDEFINED → stack[0] = undefined
+// 2 GET_VAR → stack[1] = scope[2][0]
+// 5 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 7 NOT stack[0] = !stack[0]
+// 7 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=166
+// 9 GET_GLOBAL → stack[0] = document
+// 12 DUP → stack[1] = stack[0]
+// 12 GET_PROP_NAME stack[1] ← stack[1]["createElement"]
+// 14 PUSH_STRING → stack[2] = "canvas"
+// 17 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 19 SET_VAR scope[0][2] ← stack[0]
+// 22 GET_VAR → stack[0] = scope[0][2]
+// 24 PUSH_STRING → stack[1] = "toDataURL"
+// 27 NEW_ARRAY → stack[0] = [...top 2 elements]
+// 28 GET_GLOBAL → stack[1] = navigator
+// 30 PUSH_STRING → stack[2] = "toString"
+// 33 NEW_ARRAY → stack[1] = [...top 2 elements]
+// 34 GET_GLOBAL → stack[2] = document
+// 36 PUSH_STRING → stack[3] = "createElement"
+// 39 NEW_ARRAY → stack[2] = [...top 2 elements]
+// 40 GET_GLOBAL → stack[3] = document
+// 42 PUSH_STRING → stack[4] = "getElementById"
+// 45 NEW_ARRAY → stack[3] = [...top 2 elements]
+// 46 GET_GLOBAL → stack[4] = JSON
+// 48 PUSH_STRING → stack[5] = "stringify"
+// 51 NEW_ARRAY → stack[4] = [...top 2 elements]
+// 52 GET_GLOBAL → stack[5] = JSON
+// 54 PUSH_STRING → stack[6] = "parse"
+// 57 NEW_ARRAY → stack[5] = [...top 2 elements]
+// 58 GET_GLOBAL → stack[6] = window
+// 60 PUSH_STRING → stack[7] = "setInterval"
+// 63 NEW_ARRAY → stack[6] = [...top 2 elements]
+// 64 GET_GLOBAL → stack[7] = window
+// 66 PUSH_STRING → stack[8] = "eval"
+// 69 NEW_ARRAY → stack[7] = [...top 2 elements]
+// 70 GET_GLOBAL → stack[8] = window
+// 72 PUSH_STRING → stack[9] = "matchMedia"
+// 75 NEW_ARRAY → stack[8] = [...top 2 elements]
+// 77 NEW_ARRAY → stack[0] = [...top 9 elements]
+// 79 SET_VAR scope[0][3] ← stack[0]
+// 81 PUSH_CONST → stack[0] = 0
+// 84 SET_VAR scope[0][4] ← stack[0]
+// 87 GET_VAR → stack[0] = scope[0][4]
+// 90 GET_VAR → stack[1] = scope[0][3]
+// 92 GET_PROP_NAME stack[1] ← stack[1]["length"]
+// 95 LESS_THAN stack[0] = stack[0] < stack[1]
+// 95 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=166
+// 98 GET_VAR → stack[0] = scope[0][3]
+// 101 GET_VAR → stack[1] = scope[0][4]
+// 104 GET_PROP stack[0] = stack[0][stack[1]]
+// 104 GET_PROP_NAME stack[0] ← stack[0]["0"]
+// 107 GET_VAR → stack[1] = scope[0][3]
+// 110 GET_VAR → stack[2] = scope[0][4]
+// 113 GET_PROP stack[1] = stack[1][stack[2]]
+// 113 GET_PROP_NAME stack[1] ← stack[1]["1"]
+// 116 GET_PROP stack[0] = stack[0][stack[1]]
+// 117 DUP → stack[1] = stack[0]
+// 117 GET_PROP_NAME stack[1] ← stack[1]["toString"]
+// 120 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 122 DUP → stack[1] = stack[0]
+// 122 GET_PROP_NAME stack[1] ← stack[1]["replace"]
+// 124 GET_GLOBAL → stack[2] = RegExp
+// 126 PUSH_STRING → stack[3] = "\s*"
+// 128 PUSH_STRING → stack[4] = "g"
+// 131 FUNCTION_BIND_APPLY → stack[2] = new stack[4](2 args)
+// 132 PUSH_STRING → stack[3] = ""
+// 135 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 137 DUP → stack[1] = stack[0]
+// 137 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 139 PUSH_STRING → stack[2] = "nativecode"
+// 142 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 144 SET_VAR scope[0][5] ← stack[0]
+// 147 GET_VAR → stack[0] = scope[0][5]
+// 149 PUSH_CONST → stack[1] = 0
+// 152 LESS_THAN stack[0] = stack[0] < stack[1]
+// 152 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=154
+// 155 PUSH_TRUE → stack[0] = true
+// 156 RETURN stack[0]
+// 156 JUMP → JUMP_TO=160
+// 159 SET_VAR scope[0][6] ← stack[-1]
+// 161 PUSH_SCOPE_REF → stack[-1] = scope[0], stack[0] = 4
+// 165 POST_INC stack[-1] = stack[-1][stack[0]]++ (old value)
+// 166 POP stack[-1]
+// 166 JUMP → JUMP_TO=85
+// 168 GET_GLOBAL → stack[-1] = navigator
+// 170 GET_PROP_NAME stack[-1] ← stack[-1]["plugins"]
+// 173 DUP → stack[0] = stack[-1]
+// 173 GET_PROP_NAME stack[0] ← stack[0]["toString"]
+// 176 CALL func.apply(thisArg, [0 args]) → stack[-1]
+// 177 PUSH_STRING → stack[0] = "[object PluginArray]"
+// 180 STRICT_NOT_EQUAL stack[-1] = stack[-1] !== stack[0]
+// 181 RETURN stack[-1]
+------------------------269--------------------------
+// 0 GET_GLOBAL → stack[0] = navigator
+// 2 GET_PROP_NAME stack[0] ← stack[0]["userAgent"]
+// 5 DUP → stack[1] = stack[0]
+// 5 GET_PROP_NAME stack[1] ← stack[1]["toLowerCase"]
+// 8 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 10 SET_VAR scope[0][2] ← stack[0]
+// 13 GET_VAR → stack[0] = scope[0][2]
+// 16 DUP → stack[1] = stack[0]
+// 16 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 18 PUSH_STRING → stack[2] = "electron"
+// 21 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 22 PUSH_CONST → stack[1] = 0
+// 25 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 25 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=27
+// 28 PUSH_FALSE → stack[0] = false
+// 29 RETURN stack[0]
+// 29 GET_GLOBAL → stack[0] = RegExp
+// 31 PUSH_STRING → stack[1] = "^https?:\/\/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})"
+// 34 FUNCTION_BIND_APPLY → stack[0] = new stack[1](1 args)
+// 36 SET_VAR scope[0][3] ← stack[0]
+// 38 GET_GLOBAL → stack[0] = window
+// 40 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=44
+// 42 GET_GLOBAL → stack[0] = window
+// 44 GET_PROP_NAME stack[0] ← stack[0]["location"]
+// 46 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=52
+// 48 GET_GLOBAL → stack[0] = window
+// 50 GET_PROP_NAME stack[0] ← stack[0]["location"]
+// 52 GET_PROP_NAME stack[0] ← stack[0]["href"]
+// 54 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=108
+// 56 GET_GLOBAL → stack[0] = window
+// 58 GET_PROP_NAME stack[0] ← stack[0]["location"]
+// 60 GET_PROP_NAME stack[0] ← stack[0]["href"]
+// 63 SET_VAR scope[0][4] ← stack[0]
+// 66 GET_VAR → stack[0] = scope[0][4]
+// 69 DUP → stack[1] = stack[0]
+// 69 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 71 PUSH_STRING → stack[2] = "file"
+// 74 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 75 PUSH_CONST → stack[1] = 0
+// 78 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 78 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=91 else POP
+// 81 GET_VAR → stack[0] = scope[0][4]
+// 84 DUP → stack[1] = stack[0]
+// 84 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 86 PUSH_STRING → stack[2] = "http://localhost"
+// 89 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 90 PUSH_CONST → stack[1] = 0
+// 93 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 93 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=104 else POP
+// 96 GET_VAR → stack[0] = scope[0][3]
+// 99 DUP → stack[1] = stack[0]
+// 99 GET_PROP_NAME stack[1] ← stack[1]["test"]
+// 102 GET_VAR → stack[2] = scope[0][4]
+// 105 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 106 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=108
+// 109 PUSH_TRUE → stack[0] = true
+// 110 RETURN stack[0]
+// 111 PUSH_FALSE → stack[0] = false
+// 112 RETURN stack[0]
+------------------------271--------------------------
+// 0 GET_GLOBAL → stack[0] = navigator
+// 2 GET_PROP_NAME stack[0] ← stack[0]["userAgent"]
+// 5 DUP → stack[1] = stack[0]
+// 5 GET_PROP_NAME stack[1] ← stack[1]["toLowerCase"]
+// 8 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 10 SET_VAR scope[0][2] ← stack[0]
+// 12 GET_GLOBAL → stack[0] = navigator
+// 14 GET_PROP_NAME stack[0] ← stack[0]["platform"]
+// 17 DUP → stack[1] = stack[0]
+// 17 GET_PROP_NAME stack[1] ← stack[1]["toLowerCase"]
+// 20 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 22 SET_VAR scope[0][3] ← stack[0]
+// 24 PUSH_CONST → stack[0] = 0
+// 27 SET_VAR scope[0][4] ← stack[0]
+// 29 PUSH_CONST → stack[0] = 1
+// 32 SET_VAR scope[0][5] ← stack[0]
+// 34 PUSH_CONST → stack[0] = 2
+// 37 SET_VAR scope[0][6] ← stack[0]
+// 39 PUSH_CONST → stack[0] = 3
+// 42 SET_VAR scope[0][7] ← stack[0]
+// 44 PUSH_CONST → stack[0] = 4
+// 47 SET_VAR scope[0][8] ← stack[0]
+// 49 PUSH_CONST → stack[0] = 5
+// 52 SET_VAR scope[0][9] ← stack[0]
+// 55 GET_VAR → stack[0] = scope[0][9]
+// 58 SET_VAR scope[0][10] ← stack[0]
+// 60 PUSH_STRING → stack[0] = "windows"
+// 63 SET_VAR scope[0][11] ← stack[0]
+// 65 PUSH_STRING → stack[0] = "win"
+// 68 SET_VAR scope[0][12] ← stack[0]
+// 70 PUSH_STRING → stack[0] = "android"
+// 73 SET_VAR scope[0][13] ← stack[0]
+// 75 PUSH_STRING → stack[0] = "linux"
+// 78 SET_VAR scope[0][14] ← stack[0]
+// 80 PUSH_STRING → stack[0] = "iphone"
+// 83 SET_VAR scope[0][15] ← stack[0]
+// 85 PUSH_STRING → stack[0] = "ipad"
+// 88 SET_VAR scope[0][16] ← stack[0]
+// 90 PUSH_STRING → stack[0] = "ipod"
+// 93 SET_VAR scope[0][17] ← stack[0]
+// 95 PUSH_STRING → stack[0] = "mac"
+// 98 SET_VAR scope[0][18] ← stack[0]
+// 101 GET_VAR → stack[0] = scope[0][2]
+// 104 DUP → stack[1] = stack[0]
+// 104 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 106 PUSH_STRING → stack[2] = "macintosh"
+// 109 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 110 PUSH_CONST → stack[1] = 0
+// 113 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 113 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=126 else POP
+// 116 GET_VAR → stack[0] = scope[0][2]
+// 119 DUP → stack[1] = stack[0]
+// 119 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 121 PUSH_STRING → stack[2] = "mac_powerpc)"
+// 124 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 125 PUSH_CONST → stack[1] = 0
+// 128 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 128 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=136
+// 131 GET_VAR → stack[0] = scope[0][8]
+// 134 SET_VAR scope[0][10] ← stack[0]
+// 136 JUMP → JUMP_TO=331
+// 139 GET_VAR → stack[0] = scope[0][2]
+// 142 DUP → stack[1] = stack[0]
+// 142 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 145 GET_VAR → stack[2] = scope[0][11]
+// 148 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 149 PUSH_CONST → stack[1] = 0
+// 152 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 152 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=160
+// 155 GET_VAR → stack[0] = scope[0][4]
+// 158 SET_VAR scope[0][10] ← stack[0]
+// 160 JUMP → JUMP_TO=331
+// 163 GET_VAR → stack[0] = scope[0][2]
+// 166 DUP → stack[1] = stack[0]
+// 166 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 169 GET_VAR → stack[2] = scope[0][13]
+// 172 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 173 PUSH_CONST → stack[1] = 0
+// 176 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 176 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=184
+// 179 GET_VAR → stack[0] = scope[0][5]
+// 182 SET_VAR scope[0][10] ← stack[0]
+// 184 JUMP → JUMP_TO=331
+// 187 GET_VAR → stack[0] = scope[0][2]
+// 190 DUP → stack[1] = stack[0]
+// 190 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 193 GET_VAR → stack[2] = scope[0][14]
+// 196 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 197 PUSH_CONST → stack[1] = 0
+// 200 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 200 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=213 else POP
+// 203 GET_VAR → stack[0] = scope[0][2]
+// 206 DUP → stack[1] = stack[0]
+// 206 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 208 PUSH_STRING → stack[2] = "cros"
+// 211 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 212 PUSH_CONST → stack[1] = 0
+// 215 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 215 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=228 else POP
+// 218 GET_VAR → stack[0] = scope[0][2]
+// 221 DUP → stack[1] = stack[0]
+// 221 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 223 PUSH_STRING → stack[2] = "x11"
+// 226 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 227 PUSH_CONST → stack[1] = 0
+// 230 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 230 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=238
+// 233 GET_VAR → stack[0] = scope[0][6]
+// 236 SET_VAR scope[0][10] ← stack[0]
+// 238 JUMP → JUMP_TO=331
+// 241 GET_VAR → stack[0] = scope[0][2]
+// 244 DUP → stack[1] = stack[0]
+// 244 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 247 GET_VAR → stack[2] = scope[0][15]
+// 250 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 251 PUSH_CONST → stack[1] = 0
+// 254 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 254 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=268 else POP
+// 257 GET_VAR → stack[0] = scope[0][2]
+// 260 DUP → stack[1] = stack[0]
+// 260 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 263 GET_VAR → stack[2] = scope[0][16]
+// 266 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 267 PUSH_CONST → stack[1] = 0
+// 270 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 270 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=284 else POP
+// 273 GET_VAR → stack[0] = scope[0][2]
+// 276 DUP → stack[1] = stack[0]
+// 276 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 279 GET_VAR → stack[2] = scope[0][17]
+// 282 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 283 PUSH_CONST → stack[1] = 0
+// 286 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 286 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=299 else POP
+// 289 GET_VAR → stack[0] = scope[0][2]
+// 292 DUP → stack[1] = stack[0]
+// 292 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 294 PUSH_STRING → stack[2] = "crios"
+// 297 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 298 PUSH_CONST → stack[1] = 0
+// 301 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 301 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=314 else POP
+// 304 GET_VAR → stack[0] = scope[0][2]
+// 307 DUP → stack[1] = stack[0]
+// 307 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 309 PUSH_STRING → stack[2] = "fxios"
+// 312 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 313 PUSH_CONST → stack[1] = 0
+// 316 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 316 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=324
+// 319 GET_VAR → stack[0] = scope[0][7]
+// 322 SET_VAR scope[0][10] ← stack[0]
+// 324 JUMP → JUMP_TO=331
+// 327 GET_VAR → stack[0] = scope[0][9]
+// 330 SET_VAR scope[0][10] ← stack[0]
+// 333 GET_VAR → stack[0] = scope[0][3]
+// 336 DUP → stack[1] = stack[0]
+// 336 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 339 GET_VAR → stack[2] = scope[0][12]
+// 342 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 343 PUSH_CONST → stack[1] = 0
+// 346 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 346 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=353
+// 349 GET_VAR → stack[0] = scope[0][10]
+// 352 GET_VAR → stack[1] = scope[0][4]
+// 355 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 355 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=359
+// 358 PUSH_TRUE → stack[0] = true
+// 359 RETURN stack[0]
+// 359 JUMP → JUMP_TO=627
+// 362 GET_VAR → stack[0] = scope[0][3]
+// 365 DUP → stack[1] = stack[0]
+// 365 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 368 GET_VAR → stack[2] = scope[0][14]
+// 371 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 372 PUSH_CONST → stack[1] = 0
+// 375 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 375 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=389 else POP
+// 378 GET_VAR → stack[0] = scope[0][3]
+// 381 DUP → stack[1] = stack[0]
+// 381 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 384 GET_VAR → stack[2] = scope[0][13]
+// 387 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 388 PUSH_CONST → stack[1] = 0
+// 391 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 391 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=404 else POP
+// 394 GET_VAR → stack[0] = scope[0][3]
+// 397 DUP → stack[1] = stack[0]
+// 397 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 399 PUSH_STRING → stack[2] = "pike"
+// 402 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 403 PUSH_CONST → stack[1] = 0
+// 406 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 406 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=413
+// 409 GET_VAR → stack[0] = scope[0][10]
+// 412 GET_VAR → stack[1] = scope[0][6]
+// 415 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 415 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=422
+// 418 GET_VAR → stack[0] = scope[0][10]
+// 421 GET_VAR → stack[1] = scope[0][5]
+// 424 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 424 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=428
+// 427 PUSH_TRUE → stack[0] = true
+// 428 RETURN stack[0]
+// 428 JUMP → JUMP_TO=627
+// 431 GET_VAR → stack[0] = scope[0][3]
+// 434 DUP → stack[1] = stack[0]
+// 434 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 437 GET_VAR → stack[2] = scope[0][18]
+// 440 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 441 PUSH_CONST → stack[1] = 0
+// 444 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 444 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=458 else POP
+// 447 GET_VAR → stack[0] = scope[0][3]
+// 450 DUP → stack[1] = stack[0]
+// 450 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 453 GET_VAR → stack[2] = scope[0][16]
+// 456 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 457 PUSH_CONST → stack[1] = 0
+// 460 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 460 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=474 else POP
+// 463 GET_VAR → stack[0] = scope[0][3]
+// 466 DUP → stack[1] = stack[0]
+// 466 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 469 GET_VAR → stack[2] = scope[0][17]
+// 472 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 473 PUSH_CONST → stack[1] = 0
+// 476 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 476 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=490 else POP
+// 479 GET_VAR → stack[0] = scope[0][3]
+// 482 DUP → stack[1] = stack[0]
+// 482 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 485 GET_VAR → stack[2] = scope[0][15]
+// 488 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 489 PUSH_CONST → stack[1] = 0
+// 492 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 492 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=499
+// 495 GET_VAR → stack[0] = scope[0][10]
+// 498 GET_VAR → stack[1] = scope[0][8]
+// 501 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 501 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=508
+// 504 GET_VAR → stack[0] = scope[0][10]
+// 507 GET_VAR → stack[1] = scope[0][7]
+// 510 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 510 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=514
+// 513 PUSH_TRUE → stack[0] = true
+// 514 RETURN stack[0]
+// 514 JUMP → JUMP_TO=627
+// 517 GET_VAR → stack[0] = scope[0][3]
+// 520 DUP → stack[1] = stack[0]
+// 520 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 523 GET_VAR → stack[2] = scope[0][12]
+// 526 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 527 PUSH_CONST → stack[1] = 0
+// 530 LESS_THAN stack[0] = stack[0] < stack[1]
+// 530 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=544
+// 533 GET_VAR → stack[0] = scope[0][3]
+// 536 DUP → stack[1] = stack[0]
+// 536 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 539 GET_VAR → stack[2] = scope[0][14]
+// 542 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 543 PUSH_CONST → stack[1] = 0
+// 546 LESS_THAN stack[0] = stack[0] < stack[1]
+// 546 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=560
+// 549 GET_VAR → stack[0] = scope[0][3]
+// 552 DUP → stack[1] = stack[0]
+// 552 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 555 GET_VAR → stack[2] = scope[0][18]
+// 558 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 559 PUSH_CONST → stack[1] = 0
+// 562 LESS_THAN stack[0] = stack[0] < stack[1]
+// 562 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=576
+// 565 GET_VAR → stack[0] = scope[0][3]
+// 568 DUP → stack[1] = stack[0]
+// 568 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 571 GET_VAR → stack[2] = scope[0][15]
+// 574 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 575 PUSH_CONST → stack[1] = 0
+// 578 LESS_THAN stack[0] = stack[0] < stack[1]
+// 578 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=592
+// 581 GET_VAR → stack[0] = scope[0][3]
+// 584 DUP → stack[1] = stack[0]
+// 584 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 587 GET_VAR → stack[2] = scope[0][16]
+// 590 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 591 PUSH_CONST → stack[1] = 0
+// 594 LESS_THAN stack[0] = stack[0] < stack[1]
+// 594 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=608
+// 597 GET_VAR → stack[0] = scope[0][3]
+// 600 DUP → stack[1] = stack[0]
+// 600 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 603 GET_VAR → stack[2] = scope[0][17]
+// 606 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 607 PUSH_CONST → stack[1] = 0
+// 610 LESS_THAN stack[0] = stack[0] < stack[1]
+// 611 SET_VAR scope[0][19] ← stack[0]
+// 614 GET_VAR → stack[0] = scope[0][19]
+// 617 GET_VAR → stack[1] = scope[0][10]
+// 620 GET_VAR → stack[2] = scope[0][9]
+// 623 STRICT_EQUAL stack[1] = stack[1] === stack[2]
+// 624 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 624 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=626
+// 627 PUSH_TRUE → stack[0] = true
+// 628 RETURN stack[0]
+// 628 PUSH_CONST → stack[0] = 0
+// 631 SET_VAR scope[0][20] ← stack[0]
+// 633 PUSH_CONST → stack[0] = 1
+// 636 SET_VAR scope[0][21] ← stack[0]
+// 638 PUSH_CONST → stack[0] = 2
+// 641 SET_VAR scope[0][22] ← stack[0]
+// 643 PUSH_CONST → stack[0] = 4
+// 646 SET_VAR scope[0][23] ← stack[0]
+// 648 PUSH_CONST → stack[0] = 5
+// 651 SET_VAR scope[0][24] ← stack[0]
+// 654 GET_VAR → stack[0] = scope[0][24]
+// 657 SET_VAR scope[0][25] ← stack[0]
+// 660 GET_VAR → stack[0] = scope[0][2]
+// 663 DUP → stack[1] = stack[0]
+// 663 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 665 PUSH_STRING → stack[2] = "firefox/"
+// 668 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 669 PUSH_CONST → stack[1] = 0
+// 672 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 672 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=680
+// 675 GET_VAR → stack[0] = scope[0][22]
+// 678 SET_VAR scope[0][25] ← stack[0]
+// 680 JUMP → JUMP_TO=798
+// 683 GET_VAR → stack[0] = scope[0][2]
+// 686 DUP → stack[1] = stack[0]
+// 686 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 688 PUSH_STRING → stack[2] = "opera/"
+// 691 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 692 PUSH_CONST → stack[1] = 0
+// 695 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 695 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=708 else POP
+// 698 GET_VAR → stack[0] = scope[0][2]
+// 701 DUP → stack[1] = stack[0]
+// 701 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 703 PUSH_STRING → stack[2] = " opr/"
+// 706 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 707 PUSH_CONST → stack[1] = 0
+// 710 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 710 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=720 else POP
+// 713 GET_VAR → stack[0] = scope[0][2]
+// 716 DUP → stack[1] = stack[0]
+// 716 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 718 PUSH_STRING → stack[2] = " opt/"
+// 721 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 722 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=730
+// 725 GET_VAR → stack[0] = scope[0][21]
+// 728 SET_VAR scope[0][25] ← stack[0]
+// 730 JUMP → JUMP_TO=798
+// 733 GET_VAR → stack[0] = scope[0][2]
+// 736 DUP → stack[1] = stack[0]
+// 736 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 738 PUSH_STRING → stack[2] = "chrome/"
+// 741 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 742 PUSH_CONST → stack[1] = 0
+// 745 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 745 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=753
+// 748 GET_VAR → stack[0] = scope[0][20]
+// 751 SET_VAR scope[0][25] ← stack[0]
+// 753 JUMP → JUMP_TO=798
+// 756 GET_VAR → stack[0] = scope[0][2]
+// 759 DUP → stack[1] = stack[0]
+// 759 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 761 PUSH_STRING → stack[2] = "trident/"
+// 764 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 765 PUSH_CONST → stack[1] = 0
+// 768 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 768 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=781 else POP
+// 771 GET_VAR → stack[0] = scope[0][2]
+// 774 DUP → stack[1] = stack[0]
+// 774 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 776 PUSH_STRING → stack[2] = "msie"
+// 779 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 780 PUSH_CONST → stack[1] = 0
+// 783 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 783 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=791
+// 786 GET_VAR → stack[0] = scope[0][23]
+// 789 SET_VAR scope[0][25] ← stack[0]
+// 791 JUMP → JUMP_TO=798
+// 794 GET_VAR → stack[0] = scope[0][24]
+// 797 SET_VAR scope[0][25] ← stack[0]
+// 800 PUSH_UNDEFINED → stack[0] = undefined
+// 801 GET_VAR → stack[1] = scope[2][0]
+// 804 GET_VAR → stack[2] = scope[2][2]
+// 807 GET_VAR → stack[3] = scope[2][3]
+// 809 GET_PROP_NAME stack[3] ← stack[3]["slardarErrs"]
+// 812 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 814 DUP → stack[1] = stack[0]
+// 814 GET_PROP_NAME stack[1] ← stack[1]["toLowerCase"]
+// 817 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 819 SET_VAR scope[0][26] ← stack[0]
+// 822 PUSH_UNDEFINED → stack[0] = undefined
+// 823 GET_VAR → stack[1] = scope[2][1]
+// 826 PUSH_FALSE → stack[2] = false
+// 827 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 829 SET_VAR scope[0][27] ← stack[0]
+// 832 GET_VAR → stack[0] = scope[0][27]
+// 834 GET_PROP_NAME stack[0] ← stack[0]["data"]
+// 836 GET_PROP_NAME stack[0] ← stack[0]["gpu"]
+// 839 SET_VAR scope[0][28] ← stack[0]
+// 842 GET_VAR → stack[0] = scope[0][28]
+// 845 DUP → stack[1] = stack[0]
+// 845 GET_PROP_NAME stack[1] ← stack[1]["toLowerCase"]
+// 848 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 850 SET_VAR scope[0][29] ← stack[0]
+// 853 GET_VAR → stack[0] = scope[0][25]
+// 856 GET_VAR → stack[1] = scope[0][20]
+// 859 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 859 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=866
+// 862 GET_VAR → stack[0] = scope[0][25]
+// 865 GET_VAR → stack[1] = scope[0][21]
+// 868 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 868 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=893
+// 870 GET_GLOBAL → stack[0] = window
+// 872 GET_PROP_NAME stack[0] ← stack[0]["chrome"]
+// 874 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=893 else POP
+// 876 GET_GLOBAL → stack[0] = navigator
+// 878 GET_PROP_NAME stack[0] ← stack[0]["vendor"]
+// 881 DUP → stack[1] = stack[0]
+// 881 GET_PROP_NAME stack[1] ← stack[1]["toString"]
+// 884 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 886 DUP → stack[1] = stack[0]
+// 886 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 888 PUSH_STRING → stack[2] = "Google"
+// 891 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 892 PUSH_CONST → stack[1] = 0
+// 895 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 895 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=897
+// 898 PUSH_TRUE → stack[0] = true
+// 899 RETURN stack[0]
+// 900 GET_VAR → stack[0] = scope[0][25]
+// 903 GET_VAR → stack[1] = scope[0][20]
+// 906 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 906 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=913
+// 909 GET_VAR → stack[0] = scope[0][25]
+// 912 GET_VAR → stack[1] = scope[0][21]
+// 915 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 915 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=928
+// 918 GET_VAR → stack[0] = scope[0][26]
+// 921 DUP → stack[1] = stack[0]
+// 921 GET_PROP_NAME stack[1] ← stack[1]["indexOf"]
+// 923 PUSH_STRING → stack[2] = "chrome"
+// 926 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 927 PUSH_CONST → stack[1] = 0
+// 930 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 930 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=932
+// 933 PUSH_TRUE → stack[0] = true
+// 934 RETURN stack[0]
+// 935 GET_VAR → stack[0] = scope[0][25]
+// 938 GET_VAR → stack[1] = scope[0][23]
+// 941 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 941 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=947
+// 944 GET_VAR → stack[0] = scope[0][29]
+// 946 PUSH_STRING → stack[1] = ""
+// 949 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 949 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=951
+// 952 PUSH_TRUE → stack[0] = true
+// 953 RETURN stack[0]
+// 954 PUSH_FALSE → stack[0] = false
+// 955 RETURN stack[0]
+------------------------139--------------------------
+// 1 GET_VAR → stack[0] = scope[0][1]
+// 3 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 5 PUSH_CONST → stack[1] = 0
+// 8 GREATER_THAN stack[0] = stack[0] > stack[1]
+// 8 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=15
+// 11 GET_VAR → stack[0] = scope[0][1]
+// 13 GET_PROP_NAME stack[0] ← stack[0]["0"]
+// 16 PUSH_UNDEFINED → stack[1] = undefined
+// 17 STRICT_NOT_EQUAL stack[0] = stack[0] !== stack[1]
+// 17 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=24
+// 20 GET_VAR → stack[0] = scope[0][1]
+// 22 GET_PROP_NAME stack[0] ← stack[0]["0"]
+// 24 JUMP → JUMP_TO=26
+// 27 PUSH_FALSE → stack[1] = false
+// 28 SET_VAR scope[0][2] ← stack[1]
+// 31 GET_VAR → stack[1] = scope[1][3]
+// 33 PUSH_CONST → stack[2] = 1
+// 36 ADD stack[1] = stack[1] + stack[2]
+// 36 PUSH_SCOPE_REF → stack[2] = scope[1], stack[3] = 3
+// 40 SET_PROP_NO_POP stack[2][stack[3]] = stack[1] (keep value)
+// 41 POP stack[1]
+// 42 NEW_OBJECT → stack[1] = {}
+// 43 SET_VAR scope[0][3] ← stack[1]
+// 45 PUSH_STRING → stack[1] = ""
+// 48 SET_VAR scope[0][4] ← stack[1]
+// 51 GET_VAR → stack[1] = scope[1][2]
+// 53 JUMP_IF_FALSE_OR_POP if (stack[1]) POP else JUMP_TO=58
+// 56 GET_VAR → stack[1] = scope[1][2]
+// 58 GET_PROP_NAME stack[1] ← stack[1]["WEBGL"]
+// 60 JUMP_IF_FALSE_OR_POP if (stack[1]) POP else JUMP_TO=65
+// 63 GET_VAR → stack[1] = scope[1][2]
+// 65 GET_PROP_NAME stack[1] ← stack[1]["VENDOR"]
+// 67 JUMP_IF_FALSE_OR_POP if (stack[1]) POP else JUMP_TO=72
+// 70 GET_VAR → stack[1] = scope[1][2]
+// 72 GET_PROP_NAME stack[1] ← stack[1]["RENDERER"]
+// 74 JUMP_IF_FALSE if (!stack[1]) JUMP_TO=101
+// 77 GET_VAR → stack[1] = scope[1][2]
+// 79 GET_PROP_NAME stack[1] ← stack[1]["WEBGL"]
+// 82 SET_VAR scope[0][3] ← stack[1]
+// 85 GET_VAR → stack[1] = scope[1][2]
+// 87 GET_PROP_NAME stack[1] ← stack[1]["VENDOR"]
+// 89 PUSH_STRING → stack[2] = "/"
+// 92 ADD stack[1] = stack[1] + stack[2]
+// 93 GET_VAR → stack[2] = scope[1][2]
+// 95 GET_PROP_NAME stack[2] ← stack[2]["RENDERER"]
+// 98 ADD stack[1] = stack[1] + stack[2]
+// 99 SET_VAR scope[0][4] ← stack[1]
+// 101 JUMP → JUMP_TO=504
+// 104 PUSH_UNDEFINED → stack[1] = undefined
+// 105 GET_VAR → stack[2] = scope[1][5]
+// 108 CALL func.apply(thisArg, [0 args]) → stack[1]
+// 110 SET_VAR scope[0][5] ← stack[1]
+// 113 GET_VAR → stack[1] = scope[0][5]
+// 116 NOT stack[1] = !stack[1]
+// 116 JUMP_IF_FALSE if (!stack[1]) JUMP_TO=128
+// 119 NEW_OBJECT → stack[1] = {}
+// 120 NEW_OBJECT → stack[2] = {}
+// 121 NEW_OBJECT → stack[3] = {}
+// 121 DEFINE_PROP Object.defineProperty(stack[2], "webglData", stack[3])
+// 123 PUSH_STRING → stack[3] = ""
+// 125 DEFINE_PROP Object.defineProperty(stack[2], "gpu", stack[3])
+// 127 DEFINE_PROP Object.defineProperty(stack[1], "data", stack[2])
+// 130 RETURN stack[1]
+// 131 NEW_OBJECT → stack[1] = {}
+// 132 GET_VAR → stack[2] = scope[0][5]
+// 135 DUP → stack[3] = stack[2]
+// 135 GET_PROP_NAME stack[3] ← stack[3]["getSupportedExtensions"]
+// 138 CALL func.apply(thisArg, [0 args]) → stack[2]
+// 139 JUMP_IF_TRUE_OR_POP if (stack[2]) JUMP_TO=141 else POP
+// 142 NEW_ARRAY → stack[2] = [...top 0 elements]
+// 143 DEFINE_PROP Object.defineProperty(stack[1], "supportedExtensions", stack[2])
+// 146 GET_VAR → stack[2] = scope[0][5]
+// 149 DUP → stack[3] = stack[2]
+// 149 GET_PROP_NAME stack[3] ← stack[3]["getContextAttributes"]
+// 152 CALL func.apply(thisArg, [0 args]) → stack[2]
+// 153 GET_PROP_NAME stack[2] ← stack[2]["antialias"]
+// 155 JUMP_IF_FALSE if (!stack[2]) JUMP_TO=159
+// 157 PUSH_CONST → stack[2] = 1
+// 159 JUMP → JUMP_TO=162
+// 161 PUSH_CONST → stack[3] = 2
+// 163 DEFINE_PROP Object.defineProperty(stack[2], "antialias", stack[3])
+// 166 GET_VAR → stack[3] = scope[0][5]
+// 169 DUP → stack[4] = stack[3]
+// 169 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 172 GET_VAR → stack[5] = scope[0][5]
+// 174 GET_PROP_NAME stack[5] ← stack[5]["BLUE_BITS"]
+// 177 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 178 DEFINE_PROP Object.defineProperty(stack[2], "blueBits", stack[3])
+// 181 GET_VAR → stack[3] = scope[0][5]
+// 184 DUP → stack[4] = stack[3]
+// 184 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 187 GET_VAR → stack[5] = scope[0][5]
+// 189 GET_PROP_NAME stack[5] ← stack[5]["DEPTH_BITS"]
+// 192 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 193 DEFINE_PROP Object.defineProperty(stack[2], "depthBits", stack[3])
+// 196 GET_VAR → stack[3] = scope[0][5]
+// 199 DUP → stack[4] = stack[3]
+// 199 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 202 GET_VAR → stack[5] = scope[0][5]
+// 204 GET_PROP_NAME stack[5] ← stack[5]["GREEN_BITS"]
+// 207 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 208 DEFINE_PROP Object.defineProperty(stack[2], "greenBits", stack[3])
+// 211 PUSH_UNDEFINED → stack[3] = undefined
+// 212 GET_VAR → stack[4] = scope[1][6]
+// 215 GET_VAR → stack[5] = scope[0][5]
+// 218 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 219 DEFINE_PROP Object.defineProperty(stack[2], "maxAnisotropy", stack[3])
+// 222 GET_VAR → stack[3] = scope[0][5]
+// 225 DUP → stack[4] = stack[3]
+// 225 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 228 GET_VAR → stack[5] = scope[0][5]
+// 230 GET_PROP_NAME stack[5] ← stack[5]["MAX_COMBINED_TEXTURE_IMAGE_UNITS"]
+// 233 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 234 DEFINE_PROP Object.defineProperty(stack[2], "maxCombinedTextureImageUnits", stack[3])
+// 237 GET_VAR → stack[3] = scope[0][5]
+// 240 DUP → stack[4] = stack[3]
+// 240 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 243 GET_VAR → stack[5] = scope[0][5]
+// 245 GET_PROP_NAME stack[5] ← stack[5]["MAX_CUBE_MAP_TEXTURE_SIZE"]
+// 248 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 249 DEFINE_PROP Object.defineProperty(stack[2], "maxCubeMapTextureSize", stack[3])
+// 252 GET_VAR → stack[3] = scope[0][5]
+// 255 DUP → stack[4] = stack[3]
+// 255 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 258 GET_VAR → stack[5] = scope[0][5]
+// 260 GET_PROP_NAME stack[5] ← stack[5]["MAX_FRAGMENT_UNIFORM_VECTORS"]
+// 263 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 264 DEFINE_PROP Object.defineProperty(stack[2], "maxFragmentUniformVectors", stack[3])
+// 267 GET_VAR → stack[3] = scope[0][5]
+// 270 DUP → stack[4] = stack[3]
+// 270 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 273 GET_VAR → stack[5] = scope[0][5]
+// 275 GET_PROP_NAME stack[5] ← stack[5]["MAX_RENDERBUFFER_SIZE"]
+// 278 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 279 DEFINE_PROP Object.defineProperty(stack[2], "maxRenderbufferSize", stack[3])
+// 282 GET_VAR → stack[3] = scope[0][5]
+// 285 DUP → stack[4] = stack[3]
+// 285 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 288 GET_VAR → stack[5] = scope[0][5]
+// 290 GET_PROP_NAME stack[5] ← stack[5]["MAX_TEXTURE_IMAGE_UNITS"]
+// 293 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 294 DEFINE_PROP Object.defineProperty(stack[2], "maxTextureImageUnits", stack[3])
+// 297 GET_VAR → stack[3] = scope[0][5]
+// 300 DUP → stack[4] = stack[3]
+// 300 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 303 GET_VAR → stack[5] = scope[0][5]
+// 305 GET_PROP_NAME stack[5] ← stack[5]["MAX_TEXTURE_SIZE"]
+// 308 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 309 DEFINE_PROP Object.defineProperty(stack[2], "maxTextureSize", stack[3])
+// 312 GET_VAR → stack[3] = scope[0][5]
+// 315 DUP → stack[4] = stack[3]
+// 315 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 318 GET_VAR → stack[5] = scope[0][5]
+// 320 GET_PROP_NAME stack[5] ← stack[5]["MAX_VARYING_VECTORS"]
+// 323 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 324 DEFINE_PROP Object.defineProperty(stack[2], "maxVaryingVectors", stack[3])
+// 327 GET_VAR → stack[3] = scope[0][5]
+// 330 DUP → stack[4] = stack[3]
+// 330 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 333 GET_VAR → stack[5] = scope[0][5]
+// 335 GET_PROP_NAME stack[5] ← stack[5]["MAX_VERTEX_ATTRIBS"]
+// 338 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 339 DEFINE_PROP Object.defineProperty(stack[2], "maxVertexAttribs", stack[3])
+// 342 GET_VAR → stack[3] = scope[0][5]
+// 345 DUP → stack[4] = stack[3]
+// 345 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 348 GET_VAR → stack[5] = scope[0][5]
+// 350 GET_PROP_NAME stack[5] ← stack[5]["MAX_VERTEX_TEXTURE_IMAGE_UNITS"]
+// 353 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 354 DEFINE_PROP Object.defineProperty(stack[2], "maxVertexTextureImageUnits", stack[3])
+// 357 GET_VAR → stack[3] = scope[0][5]
+// 360 DUP → stack[4] = stack[3]
+// 360 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 363 GET_VAR → stack[5] = scope[0][5]
+// 365 GET_PROP_NAME stack[5] ← stack[5]["MAX_VERTEX_UNIFORM_VECTORS"]
+// 368 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 369 DEFINE_PROP Object.defineProperty(stack[2], "maxVertexUniformVectors", stack[3])
+// 372 GET_VAR → stack[3] = scope[0][5]
+// 375 DUP → stack[4] = stack[3]
+// 375 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 378 GET_VAR → stack[5] = scope[0][5]
+// 380 GET_PROP_NAME stack[5] ← stack[5]["SHADING_LANGUAGE_VERSION"]
+// 383 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 384 DEFINE_PROP Object.defineProperty(stack[2], "shadingLanguageVersion", stack[3])
+// 387 GET_VAR → stack[3] = scope[0][5]
+// 390 DUP → stack[4] = stack[3]
+// 390 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 393 GET_VAR → stack[5] = scope[0][5]
+// 395 GET_PROP_NAME stack[5] ← stack[5]["STENCIL_BITS"]
+// 398 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 399 DEFINE_PROP Object.defineProperty(stack[2], "stencilBits", stack[3])
+// 402 GET_VAR → stack[3] = scope[0][5]
+// 405 DUP → stack[4] = stack[3]
+// 405 GET_PROP_NAME stack[4] ← stack[4]["getParameter"]
+// 408 GET_VAR → stack[5] = scope[0][5]
+// 410 GET_PROP_NAME stack[5] ← stack[5]["VERSION"]
+// 413 CALL func.apply(thisArg, [1 args]) → stack[3]
+// 414 DEFINE_PROP Object.defineProperty(stack[2], "version", stack[3])
+// 417 SET_VAR scope[0][3] ← stack[2]
+// 420 GET_VAR → stack[2] = scope[0][5]
+// 423 DUP → stack[3] = stack[2]
+// 423 GET_PROP_NAME stack[3] ← stack[3]["getExtension"]
+// 425 PUSH_STRING → stack[4] = "WEBGL_debug_renderer_info"
+// 428 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 430 SET_VAR scope[0][6] ← stack[2]
+// 433 GET_VAR → stack[2] = scope[0][5]
+// 436 DUP → stack[3] = stack[2]
+// 436 GET_PROP_NAME stack[3] ← stack[3]["getParameter"]
+// 439 GET_VAR → stack[4] = scope[0][6]
+// 441 GET_PROP_NAME stack[4] ← stack[4]["UNMASKED_VENDOR_WEBGL"]
+// 444 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 446 SET_VAR scope[0][7] ← stack[2]
+// 449 GET_VAR → stack[2] = scope[0][5]
+// 452 DUP → stack[3] = stack[2]
+// 452 GET_PROP_NAME stack[3] ← stack[3]["getParameter"]
+// 455 GET_VAR → stack[4] = scope[0][6]
+// 457 GET_PROP_NAME stack[4] ← stack[4]["UNMASKED_RENDERER_WEBGL"]
+// 460 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 462 SET_VAR scope[0][8] ← stack[2]
+// 465 GET_VAR → stack[2] = scope[1][2]
+// 468 GET_VAR → stack[3] = scope[0][8]
+// 470 SET_GLOBAL_PROP stack[3]["RENDERER"] ← stack[2]
+// 473 GET_VAR → stack[2] = scope[1][2]
+// 476 GET_VAR → stack[3] = scope[0][7]
+// 478 SET_GLOBAL_PROP stack[3]["VENDOR"] ← stack[2]
+// 481 GET_VAR → stack[2] = scope[1][2]
+// 483 GET_PROP_NAME stack[2] ← stack[2]["VENDOR"]
+// 485 PUSH_STRING → stack[3] = "/"
+// 488 ADD stack[2] = stack[2] + stack[3]
+// 489 GET_VAR → stack[3] = scope[1][2]
+// 491 GET_PROP_NAME stack[3] ← stack[3]["RENDERER"]
+// 494 ADD stack[2] = stack[2] + stack[3]
+// 495 SET_VAR scope[0][4] ← stack[2]
+// 498 GET_VAR → stack[2] = scope[1][2]
+// 501 GET_VAR → stack[3] = scope[0][3]
+// 503 SET_GLOBAL_PROP stack[3]["WEBGL"] ← stack[2]
+// 506 GET_VAR → stack[2] = scope[0][2]
+// 508 JUMP_IF_FALSE if (!stack[2]) JUMP_TO=555
+// 511 NEW_OBJECT → stack[2] = {}
+// 512 SET_VAR scope[0][9] ← stack[2]
+// 515 PUSH_UNDEFINED → stack[2] = undefined
+// 516 GET_VAR → stack[3] = scope[2][0]
+// 519 GET_VAR → stack[4] = scope[0][9]
+// 522 GET_VAR → stack[5] = scope[0][3]
+// 525 CALL func.apply(thisArg, [2 args]) → stack[2]
+// 527 POP stack[2]
+// 528 GET_VAR → stack[2] = scope[0][9]
+// 531 GET_VAR → stack[3] = scope[0][3]
+// 533 GET_PROP_NAME stack[3] ← stack[3]["antialias"]
+// 535 PUSH_CONST → stack[4] = 1
+// 538 STRICT_EQUAL stack[3] = stack[3] === stack[4]
+// 538 SET_GLOBAL_PROP stack[3]["antialias"] ← stack[2]
+// 541 NEW_OBJECT → stack[2] = {}
+// 542 NEW_OBJECT → stack[3] = {}
+// 543 GET_VAR → stack[4] = scope[0][9]
+// 545 DEFINE_PROP Object.defineProperty(stack[3], "webglData", stack[4])
+// 548 GET_VAR → stack[4] = scope[0][4]
+// 550 DEFINE_PROP Object.defineProperty(stack[3], "gpu", stack[4])
+// 552 DEFINE_PROP Object.defineProperty(stack[2], "data", stack[3])
+// 555 RETURN stack[2]
+// 555 JUMP → JUMP_TO=576
+// 558 GET_VAR → stack[2] = scope[0][3]
+// 561 GET_VAR → stack[3] = scope[1][2]
+// 563 GET_PROP_NAME stack[3] ← stack[3]["VENDOR"]
+// 565 SET_GLOBAL_PROP stack[3]["vendor"] ← stack[2]
+// 568 GET_VAR → stack[2] = scope[0][3]
+// 571 GET_VAR → stack[3] = scope[1][2]
+// 573 GET_PROP_NAME stack[3] ← stack[3]["RENDERER"]
+// 575 SET_GLOBAL_PROP stack[3]["renderer"] ← stack[2]
+// 578 NEW_OBJECT → stack[2] = {}
+// 579 NEW_OBJECT → stack[3] = {}
+// 580 GET_VAR → stack[4] = scope[0][3]
+// 582 DEFINE_PROP Object.defineProperty(stack[3], "webglData", stack[4])
+// 585 GET_VAR → stack[4] = scope[0][4]
+// 587 DEFINE_PROP Object.defineProperty(stack[3], "gpu", stack[4])
+// 589 DEFINE_PROP Object.defineProperty(stack[2], "data", stack[3])
+// 592 RETURN stack[2]
+------------------------141--------------------------
+// 0 GET_GLOBAL → stack[0] = document
+// 3 DUP → stack[1] = stack[0]
+// 3 GET_PROP_NAME stack[1] ← stack[1]["createElement"]
+// 5 PUSH_STRING → stack[2] = "canvas"
+// 8 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 10 SET_VAR scope[0][2] ← stack[0]
+// 13 PUSH_NULL → stack[0] = null
+// 14 SET_VAR scope[0][3] ← stack[0]
+// 17 GET_VAR → stack[0] = scope[0][2]
+// 20 DUP → stack[1] = stack[0]
+// 20 GET_PROP_NAME stack[1] ← stack[1]["getContext"]
+// 22 PUSH_STRING → stack[2] = "webgl"
+// 25 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 26 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=36 else POP
+// 29 GET_VAR → stack[0] = scope[0][2]
+// 32 DUP → stack[1] = stack[0]
+// 32 GET_PROP_NAME stack[1] ← stack[1]["getContext"]
+// 34 PUSH_STRING → stack[2] = "experimental-webgl"
+// 37 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 39 SET_VAR scope[0][3] ← stack[0]
+// 41 JUMP → JUMP_TO=45
+// 44 SET_VAR scope[0][4] ← stack[-1]
+// 47 GET_VAR → stack[-1] = scope[0][3]
+// 50 NOT stack[-1] = !stack[-1]
+// 50 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=54
+// 53 PUSH_NULL → stack[-1] = null
+// 54 SET_VAR scope[0][3] ← stack[-1]
+// 57 GET_VAR → stack[-1] = scope[0][3]
+// 60 RETURN stack[-1]
+------------------------142--------------------------
+// 1 GET_VAR → stack[0] = scope[0][2]
+// 4 DUP → stack[1] = stack[0]
+// 4 GET_PROP_NAME stack[1] ← stack[1]["getExtension"]
+// 6 PUSH_STRING → stack[2] = "EXT_texture_filter_anisotropic"
+// 9 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 10 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=20 else POP
+// 13 GET_VAR → stack[0] = scope[0][2]
+// 16 DUP → stack[1] = stack[0]
+// 16 GET_PROP_NAME stack[1] ← stack[1]["getExtension"]
+// 18 PUSH_STRING → stack[2] = "WEBKIT_EXT_texture_filter_anisotropic"
+// 21 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 22 JUMP_IF_TRUE_OR_POP if (stack[0]) JUMP_TO=32 else POP
+// 25 GET_VAR → stack[0] = scope[0][2]
+// 28 DUP → stack[1] = stack[0]
+// 28 GET_PROP_NAME stack[1] ← stack[1]["getExtension"]
+// 30 PUSH_STRING → stack[2] = "MOZ_EXT_texture_filter_anisotropic"
+// 33 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 35 SET_VAR scope[0][3] ← stack[0]
+// 38 GET_VAR → stack[0] = scope[0][3]
+// 40 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=75
+// 43 GET_VAR → stack[0] = scope[0][2]
+// 46 DUP → stack[1] = stack[0]
+// 46 GET_PROP_NAME stack[1] ← stack[1]["getParameter"]
+// 49 GET_VAR → stack[2] = scope[0][3]
+// 51 GET_PROP_NAME stack[2] ← stack[2]["MAX_TEXTURE_MAX_ANISOTROPY_EXT"]
+// 54 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 56 SET_VAR scope[0][4] ← stack[0]
+// 59 GET_VAR → stack[0] = scope[0][4]
+// 61 PUSH_CONST → stack[1] = 0
+// 64 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 64 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=69
+// 66 PUSH_CONST → stack[0] = 2
+// 69 SET_VAR scope[0][4] ← stack[0]
+// 72 GET_VAR → stack[0] = scope[0][4]
+// 75 RETURN stack[0]
+// 75 JUMP → JUMP_TO=78
+// 78 PUSH_NULL → stack[0] = null
+// 79 RETURN stack[0]
+// 80 PUSH_UNDEFINED → stack[0] = undefined
+// 81 RETURN stack[0]
+------------------------195--------------------------
+// 1 GET_VAR → stack[0] = scope[1][2]
+// 3 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=8
+// 6 GET_VAR → stack[0] = scope[1][3]
+// 8 JUMP → JUMP_TO=24
+// 11 PUSH_UNDEFINED → stack[1] = undefined
+// 12 GET_VAR → stack[2] = scope[1][4]
+// 15 CALL func.apply(thisArg, [0 args]) → stack[1]
+// 16 GET_PROP_NAME stack[1] ← stack[1]["data"]
+// 19 DUP → stack[2] = stack[1]
+// 19 GET_PROP_NAME stack[2] ← stack[2]["includes"]
+// 21 PUSH_STRING → stack[3] = "2"
+// 24 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 26 RETURN stack[1]
+------------------------194--------------------------
+// 0 GET_GLOBAL → stack[0] = Object
+// 3 DUP → stack[1] = stack[0]
+// 3 GET_PROP_NAME stack[1] ← stack[1]["getOwnPropertyDescriptor"]
+// 5 GET_GLOBAL → stack[2] = navigator
+// 7 PUSH_STRING → stack[3] = "maxTouchPoints"
+// 10 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 11 GET_PROP_NAME stack[0] ← stack[0]["get"]
+// 14 TYPEOF stack[0] = typeof stack[0]
+// 14 PUSH_STRING → stack[1] = "function"
+// 17 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 17 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=21
+// 19 PUSH_CONST → stack[0] = 2
+// 21 JUMP → JUMP_TO=24
+// 23 PUSH_CONST → stack[1] = 3
+// 26 SET_VAR scope[0][2] ← stack[1]
+// 28 JUMP → JUMP_TO=37
+// 31 SET_VAR scope[0][6] ← stack[0]
+// 33 PUSH_CONST → stack[0] = 1
+// 36 SET_VAR scope[0][2] ← stack[0]
+// 39 PUSH_UNDEFINED → stack[0] = undefined
+// 40 GET_VAR → stack[1] = scope[2][1]
+// 42 GET_GLOBAL → stack[2] = navigator
+// 45 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 47 SET_VAR scope[0][3] ← stack[0]
+// 50 PUSH_UNDEFINED → stack[0] = undefined
+// 51 GET_VAR → stack[1] = scope[2][0]
+// 53 GET_GLOBAL → stack[2] = Object
+// 56 DUP → stack[3] = stack[2]
+// 56 GET_PROP_NAME stack[3] ← stack[3]["getOwnPropertyDescriptor"]
+// 58 GET_GLOBAL → stack[4] = navigator
+// 60 GET_PROP_NAME stack[4] ← stack[4]["connection"]
+// 62 PUSH_STRING → stack[5] = "rtt"
+// 65 CALL func.apply(thisArg, [2 args]) → stack[2]
+// 67 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 68 PUSH_STRING → stack[1] = "object"
+// 71 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 71 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=75
+// 73 PUSH_CONST → stack[0] = 2
+// 75 JUMP → JUMP_TO=78
+// 77 PUSH_CONST → stack[1] = 1
+// 80 SET_VAR scope[0][4] ← stack[1]
+// 82 JUMP → JUMP_TO=91
+// 85 SET_VAR scope[0][7] ← stack[0]
+// 87 PUSH_CONST → stack[0] = 3
+// 90 SET_VAR scope[0][4] ← stack[0]
+// 92 PUSH_STRING → stack[0] = ""
+// 95 GET_VAR → stack[1] = scope[0][2]
+// 98 ADD stack[0] = stack[0] + stack[1]
+// 99 GET_VAR → stack[1] = scope[0][3]
+// 102 ADD stack[0] = stack[0] + stack[1]
+// 103 GET_VAR → stack[1] = scope[0][4]
+// 106 ADD stack[0] = stack[0] + stack[1]
+// 107 SET_VAR scope[0][5] ← stack[0]
+// 110 GET_VAR → stack[0] = scope[0][5]
+// 113 DUP → stack[1] = stack[0]
+// 113 GET_PROP_NAME stack[1] ← stack[1]["includes"]
+// 115 PUSH_STRING → stack[2] = "2"
+// 118 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 120 SET_VAR scope[1][3] ← stack[0]
+// 123 PUSH_TRUE → stack[0] = true
+// 124 SET_VAR scope[1][2] ← stack[0]
+// 127 NEW_OBJECT → stack[0] = {}
+// 128 GET_VAR → stack[1] = scope[0][5]
+// 130 DEFINE_PROP Object.defineProperty(stack[0], "data", stack[1])
+// 133 RETURN stack[0]
+------------------------136--------------------------
+// 0 GET_GLOBAL → stack[0] = Date
+// 2 GET_PROP_NAME stack[0] ← stack[0]["prototype"]
+// 4 GET_PROP_NAME stack[0] ← stack[0]["toString"]
+// 7 DUP → stack[1] = stack[0]
+// 7 GET_PROP_NAME stack[1] ← stack[1]["call"]
+// 10 GET_VAR → stack[2] = scope[0][2]
+// 13 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 15 POP stack[0]
+// 15 JUMP → JUMP_TO=54
+// 18 SET_VAR scope[0][3] ← stack[-1]
+// 21 GET_VAR → stack[-1] = scope[0][3]
+// 23 GET_PROP_NAME stack[-1] ← stack[-1]["stack"]
+// 26 DUP → stack[0] = stack[-1]
+// 26 GET_PROP_NAME stack[0] ← stack[0]["includes"]
+// 28 PUSH_STRING → stack[1] = "Proxy."
+// 31 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 32 JUMP_IF_TRUE_OR_POP if (stack[-1]) JUMP_TO=44 else POP
+// 35 GET_VAR → stack[-1] = scope[0][3]
+// 37 GET_PROP_NAME stack[-1] ← stack[-1]["stack"]
+// 40 DUP → stack[0] = stack[-1]
+// 40 GET_PROP_NAME stack[0] ← stack[0]["includes"]
+// 42 PUSH_STRING → stack[1] = "proxy."
+// 45 CALL func.apply(thisArg, [1 args]) → stack[-1]
+// 46 JUMP_IF_FALSE if (!stack[-1]) JUMP_TO=50
+// 48 PUSH_CONST → stack[-1] = 2
+// 50 JUMP → JUMP_TO=53
+// 52 PUSH_CONST → stack[0] = 1
+// 55 RETURN stack[0]
+// 55 PUSH_CONST → stack[0] = 1
+// 58 RETURN stack[0]
+------------------------115--------------------------
+// 0 PUSH_CONST → stack[0] = 0
+// 3 SET_VAR scope[0][2] ← stack[0]
+// 6 GET_VAR → stack[0] = scope[1][11]
+// 9 NOT stack[0] = !stack[0]
+// 9 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=11
+// 12 PUSH_UNDEFINED → stack[0] = undefined
+// 13 RETURN stack[0]
+// 14 PUSH_UNDEFINED → stack[0] = undefined
+// 15 GET_VAR → stack[1] = scope[1][14]
+// 18 GET_VAR → stack[2] = scope[1][5]
+// 20 PUSH_CONST → stack[3] = 2
+// 23 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 25 SET_VAR scope[0][3] ← stack[0]
+// 28 PUSH_UNDEFINED → stack[0] = undefined
+// 29 GET_VAR → stack[1] = scope[1][14]
+// 32 GET_VAR → stack[2] = scope[1][7]
+// 34 PUSH_CONST → stack[3] = 5
+// 37 PUSH_TRUE → stack[4] = true
+// 38 CALL func.apply(thisArg, [3 args]) → stack[0]
+// 40 SET_VAR scope[0][4] ← stack[0]
+// 42 PUSH_CONST → stack[0] = 1
+// 45 SET_VAR scope[0][5] ← stack[0]
+// 48 GET_VAR → stack[0] = scope[1][4]
+// 51 NOT stack[0] = !stack[0]
+// 51 JUMP_IF_FALSE_OR_POP if (stack[0]) POP else JUMP_TO=54
+// 54 GET_VAR → stack[0] = scope[1][3]
+// 56 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=81
+// 59 GET_VAR → stack[0] = scope[0][5]
+// 61 PUSH_CONST → stack[1] = 64
+// 64 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 64 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 5
+// 68 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 69 POP stack[0]
+// 70 GET_VAR → stack[0] = scope[0][2]
+// 73 GET_VAR → stack[1] = scope[1][2]
+// 75 GET_PROP_NAME stack[1] ← stack[1]["kFakeOperations"]
+// 78 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 78 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 2
+// 82 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 83 POP stack[0]
+// 84 GET_VAR → stack[0] = scope[2][0]
+// 86 GET_PROP_NAME stack[0] ← stack[0]["isTrusted"]
+// 88 PUSH_CONST → stack[1] = 1
+// 91 NOT_EQUAL stack[0] = stack[0] != stack[1]
+// 91 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=116
+// 94 GET_VAR → stack[0] = scope[0][5]
+// 96 PUSH_CONST → stack[1] = 128
+// 99 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 99 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 5
+// 103 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 104 POP stack[0]
+// 105 GET_VAR → stack[0] = scope[0][2]
+// 108 GET_VAR → stack[1] = scope[1][2]
+// 110 GET_PROP_NAME stack[1] ← stack[1]["kUntrusted"]
+// 113 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 113 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 2
+// 117 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 118 POP stack[0]
+// 119 GET_VAR → stack[0] = scope[1][5]
+// 121 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 123 PUSH_CONST → stack[1] = 0
+// 126 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 126 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=153
+// 129 GET_VAR → stack[0] = scope[0][5]
+// 131 PUSH_CONST → stack[1] = 2
+// 134 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 134 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 5
+// 138 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 139 POP stack[0]
+// 140 GET_VAR → stack[0] = scope[0][2]
+// 143 GET_VAR → stack[1] = scope[1][2]
+// 145 GET_PROP_NAME stack[1] ← stack[1]["kNoMove"]
+// 148 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 148 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 2
+// 152 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 153 POP stack[0]
+// 153 JUMP → JUMP_TO=189
+// 156 GET_VAR → stack[0] = scope[0][3]
+// 158 GET_PROP_NAME stack[0] ← stack[0]["0"]
+// 160 PUSH_CONST → stack[1] = 50
+// 163 GREATER_THAN stack[0] = stack[0] > stack[1]
+// 163 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=188
+// 166 GET_VAR → stack[0] = scope[0][5]
+// 168 PUSH_CONST → stack[1] = 16
+// 171 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 171 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 5
+// 175 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 176 POP stack[0]
+// 177 GET_VAR → stack[0] = scope[0][2]
+// 180 GET_VAR → stack[1] = scope[1][2]
+// 182 GET_PROP_NAME stack[1] ← stack[1]["kMoveFast"]
+// 185 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 185 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 2
+// 189 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 190 POP stack[0]
+// 191 GET_VAR → stack[0] = scope[1][6]
+// 193 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 195 PUSH_CONST → stack[1] = 0
+// 198 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 198 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=223
+// 201 GET_VAR → stack[0] = scope[0][5]
+// 203 PUSH_CONST → stack[1] = 4
+// 206 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 206 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 5
+// 210 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 211 POP stack[0]
+// 212 GET_VAR → stack[0] = scope[0][2]
+// 215 GET_VAR → stack[1] = scope[1][2]
+// 217 GET_PROP_NAME stack[1] ← stack[1]["kNoClickTouch"]
+// 220 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 220 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 2
+// 224 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 225 POP stack[0]
+// 226 GET_VAR → stack[0] = scope[1][7]
+// 228 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 230 PUSH_CONST → stack[1] = 0
+// 233 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 233 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=260
+// 236 GET_VAR → stack[0] = scope[0][5]
+// 238 PUSH_CONST → stack[1] = 8
+// 241 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 241 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 5
+// 245 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 246 POP stack[0]
+// 247 GET_VAR → stack[0] = scope[0][2]
+// 250 GET_VAR → stack[1] = scope[1][2]
+// 252 GET_PROP_NAME stack[1] ← stack[1]["kNoKeyboardEvent"]
+// 255 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 255 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 2
+// 259 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 260 POP stack[0]
+// 260 JUMP → JUMP_TO=296
+// 263 GET_VAR → stack[0] = scope[0][4]
+// 265 GET_PROP_NAME stack[0] ← stack[0]["0"]
+// 267 PUSH_MAGIC_NUMBER → stack[1] = 0.5
+// 270 GREATER_THAN stack[0] = stack[0] > stack[1]
+// 270 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=295
+// 273 GET_VAR → stack[0] = scope[0][5]
+// 275 PUSH_CONST → stack[1] = 32
+// 278 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 278 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 5
+// 282 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 283 POP stack[0]
+// 284 GET_VAR → stack[0] = scope[0][2]
+// 287 GET_VAR → stack[1] = scope[1][2]
+// 289 GET_PROP_NAME stack[1] ← stack[1]["kKeyboardFast"]
+// 292 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 292 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 2
+// 296 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 297 POP stack[0]
+// 298 GET_VAR → stack[0] = scope[2][5]
+// 301 GET_VAR → stack[1] = scope[0][2]
+// 303 SET_GLOBAL_PROP stack[1]["ubcode"] ← stack[0]
+// 306 GET_VAR → stack[0] = scope[0][5]
+// 309 DUP → stack[1] = stack[0]
+// 309 GET_PROP_NAME stack[1] ← stack[1]["toString"]
+// 311 PUSH_CONST → stack[2] = 32
+// 314 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 316 SET_VAR scope[0][6] ← stack[0]
+// 319 GET_VAR → stack[0] = scope[0][6]
+// 321 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 323 PUSH_CONST → stack[1] = 1
+// 326 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 326 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=337
+// 328 PUSH_STRING → stack[0] = "00"
+// 331 GET_VAR → stack[1] = scope[0][6]
+// 334 ADD stack[0] = stack[0] + stack[1]
+// 335 SET_VAR scope[0][6] ← stack[0]
+// 337 JUMP → JUMP_TO=357
+// 340 GET_VAR → stack[0] = scope[0][6]
+// 342 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 344 PUSH_CONST → stack[1] = 2
+// 347 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 347 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=356
+// 349 PUSH_STRING → stack[0] = "0"
+// 352 GET_VAR → stack[1] = scope[0][6]
+// 355 ADD stack[0] = stack[0] + stack[1]
+// 356 SET_VAR scope[0][6] ← stack[0]
+// 359 GET_VAR → stack[0] = scope[0][6]
+// 362 RETURN stack[0]
+------------------------110--------------------------
+// 0 PUSH_CONST → stack[0] = 0
+// 3 SET_VAR scope[0][5] ← stack[0]
+// 5 PUSH_CONST → stack[0] = 0
+// 8 SET_VAR scope[0][6] ← stack[0]
+// 11 GET_VAR → stack[0] = scope[0][2]
+// 13 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 16 GET_VAR → stack[1] = scope[0][3]
+// 19 GREATER_THAN stack[0] = stack[0] > stack[1]
+// 19 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=206
+// 22 NEW_ARRAY → stack[0] = [...top 0 elements]
+// 24 SET_VAR scope[0][7] ← stack[0]
+// 26 PUSH_CONST → stack[0] = 0
+// 29 SET_VAR scope[0][8] ← stack[0]
+// 32 GET_VAR → stack[0] = scope[0][8]
+// 35 GET_VAR → stack[1] = scope[0][2]
+// 37 GET_PROP_NAME stack[1] ← stack[1]["length"]
+// 39 PUSH_CONST → stack[2] = 1
+// 42 SUB stack[1] = stack[1] - stack[2]
+// 43 LESS_THAN stack[0] = stack[0] < stack[1]
+// 43 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=169
+// 46 GET_VAR → stack[0] = scope[0][2]
+// 49 GET_VAR → stack[1] = scope[0][8]
+// 51 PUSH_CONST → stack[2] = 1
+// 54 ADD stack[1] = stack[1] + stack[2]
+// 55 GET_PROP stack[0] = stack[0][stack[1]]
+// 56 SET_VAR scope[0][9] ← stack[0]
+// 59 GET_VAR → stack[0] = scope[0][2]
+// 62 GET_VAR → stack[1] = scope[0][8]
+// 65 GET_PROP stack[0] = stack[0][stack[1]]
+// 66 SET_VAR scope[0][10] ← stack[0]
+// 69 GET_VAR → stack[0] = scope[0][9]
+// 71 GET_PROP_NAME stack[0] ← stack[0]["d"]
+// 74 GET_VAR → stack[1] = scope[0][10]
+// 76 GET_PROP_NAME stack[1] ← stack[1]["d"]
+// 79 SUB stack[0] = stack[0] - stack[1]
+// 80 SET_VAR scope[0][11] ← stack[0]
+// 83 GET_VAR → stack[0] = scope[0][11]
+// 85 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=162
+// 88 GET_VAR → stack[0] = scope[0][4]
+// 90 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=107
+// 93 GET_VAR → stack[0] = scope[0][7]
+// 96 DUP → stack[1] = stack[0]
+// 96 GET_PROP_NAME stack[1] ← stack[1]["push"]
+// 98 PUSH_CONST → stack[2] = 1
+// 101 GET_VAR → stack[3] = scope[0][11]
+// 104 DIV stack[2] = stack[2] / stack[3]
+// 105 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 107 POP stack[0]
+// 107 JUMP → JUMP_TO=163
+// 110 GET_VAR → stack[0] = scope[0][7]
+// 113 DUP → stack[1] = stack[0]
+// 113 GET_PROP_NAME stack[1] ← stack[1]["push"]
+// 115 GET_GLOBAL → stack[2] = Math
+// 118 DUP → stack[3] = stack[2]
+// 118 GET_PROP_NAME stack[3] ← stack[3]["sqrt"]
+// 121 PUSH_UNDEFINED → stack[4] = undefined
+// 122 GET_VAR → stack[5] = scope[1][9]
+// 125 GET_VAR → stack[6] = scope[0][9]
+// 127 GET_PROP_NAME stack[6] ← stack[6]["x"]
+// 130 GET_VAR → stack[7] = scope[0][10]
+// 132 GET_PROP_NAME stack[7] ← stack[7]["x"]
+// 135 SUB stack[6] = stack[6] - stack[7]
+// 136 CALL func.apply(thisArg, [1 args]) → stack[4]
+// 138 PUSH_UNDEFINED → stack[5] = undefined
+// 139 GET_VAR → stack[6] = scope[1][9]
+// 142 GET_VAR → stack[7] = scope[0][9]
+// 144 GET_PROP_NAME stack[7] ← stack[7]["y"]
+// 147 GET_VAR → stack[8] = scope[0][10]
+// 149 GET_PROP_NAME stack[8] ← stack[8]["y"]
+// 152 SUB stack[7] = stack[7] - stack[8]
+// 153 CALL func.apply(thisArg, [1 args]) → stack[5]
+// 155 ADD stack[4] = stack[4] + stack[5]
+// 156 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 158 GET_VAR → stack[3] = scope[0][11]
+// 161 DIV stack[2] = stack[2] / stack[3]
+// 162 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 164 POP stack[0]
+// 164 PUSH_SCOPE_REF → stack[0] = scope[0], stack[1] = 8
+// 168 POST_INC stack[0] = stack[0][stack[1]]++ (old value)
+// 169 POP stack[0]
+// 169 JUMP → JUMP_TO=30
+// 172 PUSH_UNDEFINED → stack[0] = undefined
+// 173 GET_VAR → stack[1] = scope[1][12]
+// 176 GET_VAR → stack[2] = scope[0][7]
+// 179 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 181 SET_VAR scope[0][5] ← stack[0]
+// 184 PUSH_UNDEFINED → stack[0] = undefined
+// 185 GET_VAR → stack[1] = scope[1][13]
+// 188 GET_VAR → stack[2] = scope[0][7]
+// 191 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 193 SET_VAR scope[0][6] ← stack[0]
+// 196 GET_VAR → stack[0] = scope[0][6]
+// 198 PUSH_CONST → stack[1] = 0
+// 201 STRICT_EQUAL stack[0] = stack[0] === stack[1]
+// 201 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=206
+// 203 PUSH_MAGIC_NUMBER → stack[0] = 0.01
+// 206 SET_VAR scope[0][6] ← stack[0]
+// 209 GET_VAR → stack[0] = scope[0][5]
+// 212 GET_VAR → stack[1] = scope[0][6]
+// 215 NEW_ARRAY → stack[0] = [...top 2 elements]
+// 217 RETURN stack[0]
+------------------------217--------------------------
+// 0 PUSH_STRING → stack[0] = ""
+// 3 SET_VAR scope[0][3] ← stack[0]
+// 6 PUSH_UNDEFINED → stack[0] = undefined
+// 7 GET_VAR → stack[1] = scope[2][1]
+// 10 GET_VAR → stack[2] = scope[0][2]
+// 13 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 15 SET_VAR scope[0][3] ← stack[0]
+// 17 JUMP → JUMP_TO=26
+// 20 SET_VAR scope[0][4] ← stack[-1]
+// 22 PUSH_STRING → stack[-1] = "ffffffffffffffffffffffffffffffff"
+// 25 SET_VAR scope[0][3] ← stack[-1]
+// 28 GET_VAR → stack[-1] = scope[0][3]
+// 31 RETURN stack[-1]
+------------------------98--------------------------
+// 0 GET_GLOBAL → stack[0] = Uint8Array
+// 2 PUSH_CONST → stack[1] = 3
+// 5 FUNCTION_BIND_APPLY → stack[0] = new stack[1](1 args)
+// 7 SET_VAR scope[0][4] ← stack[0]
+// 10 GET_VAR → stack[0] = scope[0][4]
+// 13 GET_VAR → stack[1] = scope[0][2]
+// 15 PUSH_CONST → stack[2] = 256
+// 18 DIV stack[1] = stack[1] / stack[2]
+// 18 SET_GLOBAL_PROP stack[1]["0"] ← stack[0]
+// 21 GET_VAR → stack[0] = scope[0][4]
+// 24 GET_VAR → stack[1] = scope[0][2]
+// 26 PUSH_CONST → stack[2] = 256
+// 29 MOD stack[1] = stack[1] % stack[2]
+// 29 SET_GLOBAL_PROP stack[1]["1"] ← stack[0]
+// 32 GET_VAR → stack[0] = scope[0][4]
+// 35 GET_VAR → stack[1] = scope[0][3]
+// 37 PUSH_CONST → stack[2] = 256
+// 40 MOD stack[1] = stack[1] % stack[2]
+// 40 SET_GLOBAL_PROP stack[1]["2"] ← stack[0]
+// 42 GET_GLOBAL → stack[0] = String
+// 44 GET_PROP_NAME stack[0] ← stack[0]["fromCharCode"]
+// 47 DUP → stack[1] = stack[0]
+// 47 GET_PROP_NAME stack[1] ← stack[1]["apply"]
+// 50 PUSH_NULL → stack[2] = null
+// 51 GET_VAR → stack[3] = scope[0][4]
+// 54 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 56 RETURN stack[0]
+------------------------101--------------------------
+// 1 PUSH_UNDEFINED → stack[0] = undefined
+// 2 GET_VAR → stack[1] = scope[2][7]
+// 5 GET_VAR → stack[2] = scope[0][2]
+// 8 GET_VAR → stack[3] = scope[0][3]
+// 11 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 13 RETURN stack[0]
+------------------------232--------------------------
+// 0 PUSH_STRING → stack[0] = "="
+// 3 SET_VAR scope[0][4] ← stack[0]
+// 6 NEW_OBJECT → stack[0] = {}
+// 7 SET_VAR scope[0][5] ← stack[0]
+// 10 GET_VAR → stack[0] = scope[0][5]
+// 12 PUSH_STRING → stack[1] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
+// 14 SET_GLOBAL_PROP stack[1]["s0"] ← stack[0]
+// 17 GET_VAR → stack[0] = scope[0][5]
+// 19 PUSH_STRING → stack[1] = "Dkdpgh4ZKsQB80/Mfvw36XI1R25+WUAlEi7NLboqYTOPuzmFjJnryx9HVGcaStCe="
+// 21 SET_GLOBAL_PROP stack[1]["s1"] ← stack[0]
+// 24 GET_VAR → stack[0] = scope[0][5]
+// 26 PUSH_STRING → stack[1] = "Dkdpgh4ZKsQB80/Mfvw36XI1R25-WUAlEi7NLboqYTOPuzmFjJnryx9HVGcaStCe="
+// 28 SET_GLOBAL_PROP stack[1]["s2"] ← stack[0]
+// 31 GET_VAR → stack[0] = scope[0][5]
+// 33 PUSH_STRING → stack[1] = "u09tbS3UvgDEe6r-ZVMXzLpsAohTn7mdINQlW412GqBjfYiyk8JORCF5/xKHwacP="
+// 35 SET_GLOBAL_PROP stack[1]["s3"] ← stack[0]
+// 38 GET_VAR → stack[0] = scope[0][5]
+// 41 GET_VAR → stack[1] = scope[0][3]
+// 44 GET_PROP stack[0] = stack[0][stack[1]]
+// 45 SET_VAR scope[0][6] ← stack[0]
+// 47 PUSH_STRING → stack[0] = ""
+// 50 SET_VAR scope[0][7] ← stack[0]
+// 52 PUSH_CONST → stack[0] = 0
+// 55 SET_VAR scope[0][9] ← stack[0]
+// 58 GET_VAR → stack[0] = scope[0][2]
+// 60 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 63 GET_VAR → stack[1] = scope[0][9]
+// 65 PUSH_CONST → stack[2] = 3
+// 68 ADD stack[1] = stack[1] + stack[2]
+// 69 GREATER_EQUAL stack[0] = stack[0] >= stack[1]
+// 69 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=228
+// 72 GET_VAR → stack[0] = scope[0][2]
+// 75 DUP → stack[1] = stack[0]
+// 75 GET_PROP_NAME stack[1] ← stack[1]["charCodeAt"]
+// 77 PUSH_SCOPE_REF → stack[2] = scope[0], stack[3] = 9
+// 81 POST_INC stack[2] = stack[2][stack[3]]++ (old value)
+// 82 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 83 PUSH_CONST → stack[1] = 255
+// 86 BITWISE_AND stack[0] = stack[0] & stack[1]
+// 86 PUSH_CONST → stack[1] = 16
+// 89 LEFT_SHIFT stack[0] = stack[0] << stack[1]
+// 90 GET_VAR → stack[1] = scope[0][2]
+// 93 DUP → stack[2] = stack[1]
+// 93 GET_PROP_NAME stack[2] ← stack[2]["charCodeAt"]
+// 95 PUSH_SCOPE_REF → stack[3] = scope[0], stack[4] = 9
+// 99 POST_INC stack[3] = stack[3][stack[4]]++ (old value)
+// 100 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 101 PUSH_CONST → stack[2] = 255
+// 104 BITWISE_AND stack[1] = stack[1] & stack[2]
+// 104 PUSH_CONST → stack[2] = 8
+// 107 LEFT_SHIFT stack[1] = stack[1] << stack[2]
+// 108 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 109 GET_VAR → stack[1] = scope[0][2]
+// 112 DUP → stack[2] = stack[1]
+// 112 GET_PROP_NAME stack[2] ← stack[2]["charCodeAt"]
+// 114 PUSH_SCOPE_REF → stack[3] = scope[0], stack[4] = 9
+// 118 POST_INC stack[3] = stack[3][stack[4]]++ (old value)
+// 119 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 120 PUSH_CONST → stack[2] = 255
+// 123 BITWISE_AND stack[1] = stack[1] & stack[2]
+// 124 BITWISE_OR stack[0] = stack[0] | stack[1]
+// 125 SET_VAR scope[0][8] ← stack[0]
+// 128 GET_VAR → stack[0] = scope[0][7]
+// 131 GET_VAR → stack[1] = scope[0][6]
+// 134 DUP → stack[2] = stack[1]
+// 134 GET_PROP_NAME stack[2] ← stack[2]["charAt"]
+// 137 GET_VAR → stack[3] = scope[0][8]
+// 139 PUSH_CONST → stack[4] = 16515072
+// 142 BITWISE_AND stack[3] = stack[3] & stack[4]
+// 142 PUSH_CONST → stack[4] = 18
+// 145 RIGHT_SHIFT stack[3] = stack[3] >> stack[4]
+// 146 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 148 ADD stack[0] = stack[0] + stack[1]
+// 148 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 7
+// 152 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 153 POP stack[0]
+// 154 GET_VAR → stack[0] = scope[0][7]
+// 157 GET_VAR → stack[1] = scope[0][6]
+// 160 DUP → stack[2] = stack[1]
+// 160 GET_PROP_NAME stack[2] ← stack[2]["charAt"]
+// 163 GET_VAR → stack[3] = scope[0][8]
+// 165 PUSH_CONST → stack[4] = 258048
+// 168 BITWISE_AND stack[3] = stack[3] & stack[4]
+// 168 PUSH_CONST → stack[4] = 12
+// 171 RIGHT_SHIFT stack[3] = stack[3] >> stack[4]
+// 172 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 174 ADD stack[0] = stack[0] + stack[1]
+// 174 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 7
+// 178 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 179 POP stack[0]
+// 180 GET_VAR → stack[0] = scope[0][7]
+// 183 GET_VAR → stack[1] = scope[0][6]
+// 186 DUP → stack[2] = stack[1]
+// 186 GET_PROP_NAME stack[2] ← stack[2]["charAt"]
+// 189 GET_VAR → stack[3] = scope[0][8]
+// 191 PUSH_CONST → stack[4] = 4032
+// 194 BITWISE_AND stack[3] = stack[3] & stack[4]
+// 194 PUSH_CONST → stack[4] = 6
+// 197 RIGHT_SHIFT stack[3] = stack[3] >> stack[4]
+// 198 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 200 ADD stack[0] = stack[0] + stack[1]
+// 200 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 7
+// 204 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 205 POP stack[0]
+// 206 GET_VAR → stack[0] = scope[0][7]
+// 209 GET_VAR → stack[1] = scope[0][6]
+// 212 DUP → stack[2] = stack[1]
+// 212 GET_PROP_NAME stack[2] ← stack[2]["charAt"]
+// 215 GET_VAR → stack[3] = scope[0][8]
+// 217 PUSH_CONST → stack[4] = 63
+// 220 BITWISE_AND stack[3] = stack[3] & stack[4]
+// 221 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 223 ADD stack[0] = stack[0] + stack[1]
+// 223 PUSH_SCOPE_REF → stack[1] = scope[0], stack[2] = 7
+// 227 SET_PROP_NO_POP stack[1][stack[2]] = stack[0] (keep value)
+// 228 POP stack[0]
+// 228 JUMP → JUMP_TO=56
+// 231 GET_VAR → stack[0] = scope[0][2]
+// 233 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 236 GET_VAR → stack[1] = scope[0][9]
+// 239 SUB stack[0] = stack[0] - stack[1]
+// 239 PUSH_CONST → stack[1] = 0
+// 242 GREATER_THAN stack[0] = stack[0] > stack[1]
+// 242 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=402
+// 245 GET_VAR → stack[0] = scope[0][2]
+// 248 DUP → stack[1] = stack[0]
+// 248 GET_PROP_NAME stack[1] ← stack[1]["charCodeAt"]
+// 250 PUSH_SCOPE_REF → stack[2] = scope[0], stack[3] = 9
+// 254 POST_INC stack[2] = stack[2][stack[3]]++ (old value)
+// 255 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 256 PUSH_CONST → stack[1] = 255
+// 259 BITWISE_AND stack[0] = stack[0] & stack[1]
+// 259 PUSH_CONST → stack[1] = 16
+// 262 LEFT_SHIFT stack[0] = stack[0] << stack[1]
+// 263 GET_VAR → stack[1] = scope[0][2]
+// 265 GET_PROP_NAME stack[1] ← stack[1]["length"]
+// 268 GET_VAR → stack[2] = scope[0][9]
+// 271 GREATER_THAN stack[1] = stack[1] > stack[2]
+// 271 JUMP_IF_FALSE if (!stack[1]) JUMP_TO=290
+// 274 GET_VAR → stack[1] = scope[0][2]
+// 277 DUP → stack[2] = stack[1]
+// 277 GET_PROP_NAME stack[2] ← stack[2]["charCodeAt"]
+// 280 GET_VAR → stack[3] = scope[0][9]
+// 283 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 284 PUSH_CONST → stack[2] = 255
+// 287 BITWISE_AND stack[1] = stack[1] & stack[2]
+// 287 PUSH_CONST → stack[2] = 8
+// 290 LEFT_SHIFT stack[1] = stack[1] << stack[2]
+// 290 JUMP → JUMP_TO=293
+// 292 PUSH_CONST → stack[2] = 0
+// 295 BITWISE_OR stack[1] = stack[1] | stack[2]
+// 296 SET_VAR scope[0][8] ← stack[1]
+// 299 GET_VAR → stack[1] = scope[0][7]
+// 302 GET_VAR → stack[2] = scope[0][6]
+// 305 DUP → stack[3] = stack[2]
+// 305 GET_PROP_NAME stack[3] ← stack[3]["charAt"]
+// 308 GET_VAR → stack[4] = scope[0][8]
+// 310 PUSH_CONST → stack[5] = 16515072
+// 313 BITWISE_AND stack[4] = stack[4] & stack[5]
+// 313 PUSH_CONST → stack[5] = 18
+// 316 RIGHT_SHIFT stack[4] = stack[4] >> stack[5]
+// 317 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 319 ADD stack[1] = stack[1] + stack[2]
+// 319 PUSH_SCOPE_REF → stack[2] = scope[0], stack[3] = 7
+// 323 SET_PROP_NO_POP stack[2][stack[3]] = stack[1] (keep value)
+// 324 POP stack[1]
+// 325 GET_VAR → stack[1] = scope[0][7]
+// 328 GET_VAR → stack[2] = scope[0][6]
+// 331 DUP → stack[3] = stack[2]
+// 331 GET_PROP_NAME stack[3] ← stack[3]["charAt"]
+// 334 GET_VAR → stack[4] = scope[0][8]
+// 336 PUSH_CONST → stack[5] = 258048
+// 339 BITWISE_AND stack[4] = stack[4] & stack[5]
+// 339 PUSH_CONST → stack[5] = 12
+// 342 RIGHT_SHIFT stack[4] = stack[4] >> stack[5]
+// 343 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 345 ADD stack[1] = stack[1] + stack[2]
+// 345 PUSH_SCOPE_REF → stack[2] = scope[0], stack[3] = 7
+// 349 SET_PROP_NO_POP stack[2][stack[3]] = stack[1] (keep value)
+// 350 POP stack[1]
+// 351 GET_VAR → stack[1] = scope[0][7]
+// 354 GET_VAR → stack[2] = scope[0][2]
+// 356 GET_PROP_NAME stack[2] ← stack[2]["length"]
+// 359 GET_VAR → stack[3] = scope[0][9]
+// 362 GREATER_THAN stack[2] = stack[2] > stack[3]
+// 362 JUMP_IF_FALSE if (!stack[2]) JUMP_TO=381
+// 365 GET_VAR → stack[2] = scope[0][6]
+// 368 DUP → stack[3] = stack[2]
+// 368 GET_PROP_NAME stack[3] ← stack[3]["charAt"]
+// 371 GET_VAR → stack[4] = scope[0][8]
+// 373 PUSH_CONST → stack[5] = 4032
+// 376 BITWISE_AND stack[4] = stack[4] & stack[5]
+// 376 PUSH_CONST → stack[5] = 6
+// 379 RIGHT_SHIFT stack[4] = stack[4] >> stack[5]
+// 380 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 381 JUMP → JUMP_TO=385
+// 384 GET_VAR → stack[3] = scope[0][4]
+// 387 ADD stack[2] = stack[2] + stack[3]
+// 387 PUSH_SCOPE_REF → stack[3] = scope[0], stack[4] = 7
+// 391 SET_PROP_NO_POP stack[3][stack[4]] = stack[2] (keep value)
+// 392 POP stack[2]
+// 393 GET_VAR → stack[2] = scope[0][7]
+// 396 GET_VAR → stack[3] = scope[0][4]
+// 399 ADD stack[2] = stack[2] + stack[3]
+// 399 PUSH_SCOPE_REF → stack[3] = scope[0], stack[4] = 7
+// 403 SET_PROP_NO_POP stack[3][stack[4]] = stack[2] (keep value)
+// 404 POP stack[2]
+// 405 GET_VAR → stack[2] = scope[0][7]
+// 408 RETURN stack[2]
+------------------------51--------------------------
+// 1 GET_VAR → stack[0] = scope[1][2]
+// 3 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=10
+// 6 NEW_OBJECT → stack[0] = {}
+// 7 GET_VAR → stack[1] = scope[1][2]
+// 9 DEFINE_PROP Object.defineProperty(stack[0], "data", stack[1])
+// 12 RETURN stack[0]
+// 13 GET_VAR → stack[0] = scope[0][2]
+// 15 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=22
+// 18 NEW_OBJECT → stack[0] = {}
+// 18 PUSH_CONST → stack[1] = 1
+// 21 NEGATE stack[1] = -stack[1]
+// 21 DEFINE_PROP Object.defineProperty(stack[0], "data", stack[1])
+// 24 RETURN stack[0]
+// 25 PUSH_UNDEFINED → stack[0] = undefined
+// 26 GET_VAR → stack[1] = scope[1][3]
+// 29 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 31 SET_VAR scope[1][2] ← stack[0]
+// 34 NEW_OBJECT → stack[0] = {}
+// 35 GET_VAR → stack[1] = scope[1][2]
+// 37 DEFINE_PROP Object.defineProperty(stack[0], "data", stack[1])
+// 40 RETURN stack[0]
+// 40 JUMP → JUMP_TO=63
+// 43 SET_VAR scope[0][3] ← stack[-1]
+// 46 NEW_OBJECT → stack[-1] = {}
+// 46 PUSH_CONST → stack[0] = 1
+// 49 NEGATE stack[0] = -stack[0]
+// 49 DEFINE_PROP Object.defineProperty(stack[-1], "data", stack[0])
+// 52 NEW_OBJECT → stack[0] = {}
+// 53 GET_VAR → stack[1] = scope[0][3]
+// 55 DEFINE_PROP Object.defineProperty(stack[0], "err", stack[1])
+// 57 PUSH_STRING → stack[1] = "c_c"
+// 59 DEFINE_PROP Object.defineProperty(stack[0], "type", stack[1])
+// 61 DEFINE_PROP Object.defineProperty(stack[-1], "error", stack[0])
+// 64 RETURN stack[-1]
+// 65 PUSH_UNDEFINED → stack[-1] = undefined
+// 66 RETURN stack[-1]
+------------------------50--------------------------
+// 0 GET_GLOBAL → stack[0] = document
+// 3 DUP → stack[1] = stack[0]
+// 3 GET_PROP_NAME stack[1] ← stack[1]["createElement"]
+// 5 PUSH_STRING → stack[2] = "canvas"
+// 8 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 10 SET_VAR scope[0][2] ← stack[0]
+// 13 GET_VAR → stack[0] = scope[0][2]
+// 15 PUSH_CONST → stack[1] = 48
+// 17 SET_GLOBAL_PROP stack[1]["width"] ← stack[0]
+// 20 GET_VAR → stack[0] = scope[0][2]
+// 22 PUSH_CONST → stack[1] = 16
+// 24 SET_GLOBAL_PROP stack[1]["height"] ← stack[0]
+// 27 GET_VAR → stack[0] = scope[0][2]
+// 30 DUP → stack[1] = stack[0]
+// 30 GET_PROP_NAME stack[1] ← stack[1]["getContext"]
+// 32 PUSH_STRING → stack[2] = "2d"
+// 35 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 37 SET_VAR scope[0][3] ← stack[0]
+// 40 GET_VAR → stack[0] = scope[0][3]
+// 42 PUSH_STRING → stack[1] = "14px serif"
+// 44 SET_GLOBAL_PROP stack[1]["font"] ← stack[0]
+// 47 GET_VAR → stack[0] = scope[0][3]
+// 50 DUP → stack[1] = stack[0]
+// 50 GET_PROP_NAME stack[1] ← stack[1]["fillText"]
+// 52 PUSH_STRING → stack[2] = "龘ฑภ경"
+// 54 PUSH_CONST → stack[3] = 2
+// 56 PUSH_CONST → stack[4] = 12
+// 59 CALL func.apply(thisArg, [3 args]) → stack[0]
+// 61 POP stack[0]
+// 62 GET_VAR → stack[0] = scope[0][3]
+// 64 PUSH_CONST → stack[1] = 2
+// 66 SET_GLOBAL_PROP stack[1]["shadowBlur"] ← stack[0]
+// 69 GET_VAR → stack[0] = scope[0][3]
+// 71 PUSH_CONST → stack[1] = 1
+// 73 SET_GLOBAL_PROP stack[1]["showOffsetX"] ← stack[0]
+// 76 GET_VAR → stack[0] = scope[0][3]
+// 78 PUSH_STRING → stack[1] = "lime"
+// 80 SET_GLOBAL_PROP stack[1]["showColor"] ← stack[0]
+// 83 GET_VAR → stack[0] = scope[0][3]
+// 86 DUP → stack[1] = stack[0]
+// 86 GET_PROP_NAME stack[1] ← stack[1]["arc"]
+// 88 PUSH_CONST → stack[2] = 8
+// 90 PUSH_CONST → stack[3] = 8
+// 92 PUSH_CONST → stack[4] = 8
+// 94 PUSH_CONST → stack[5] = 0
+// 96 PUSH_CONST → stack[6] = 2
+// 99 CALL func.apply(thisArg, [5 args]) → stack[0]
+// 101 POP stack[0]
+// 102 GET_VAR → stack[0] = scope[0][3]
+// 105 DUP → stack[1] = stack[0]
+// 105 GET_PROP_NAME stack[1] ← stack[1]["stroke"]
+// 108 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 110 POP stack[0]
+// 111 GET_VAR → stack[0] = scope[0][2]
+// 114 DUP → stack[1] = stack[0]
+// 114 GET_PROP_NAME stack[1] ← stack[1]["toDataURL"]
+// 117 CALL func.apply(thisArg, [0 args]) → stack[0]
+// 119 SET_VAR scope[0][4] ← stack[0]
+// 122 PUSH_UNDEFINED → stack[0] = undefined
+// 123 GET_VAR → stack[1] = scope[2][0]
+// 126 GET_VAR → stack[2] = scope[0][4]
+// 129 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 131 RETURN stack[0]
+------------------------102--------------------------
+// 0 GET_GLOBAL → stack[0] = Uint8Array
+// 2 PUSH_CONST → stack[1] = 19
+// 5 FUNCTION_BIND_APPLY → stack[0] = new stack[1](1 args)
+// 7 SET_VAR scope[0][21] ← stack[0]
+// 10 GET_VAR → stack[0] = scope[0][21]
+// 13 GET_VAR → stack[1] = scope[0][2]
+// 15 SET_GLOBAL_PROP stack[1]["0"] ← stack[0]
+// 18 GET_VAR → stack[0] = scope[0][21]
+// 21 GET_VAR → stack[1] = scope[0][12]
+// 23 SET_GLOBAL_PROP stack[1]["1"] ← stack[0]
+// 26 GET_VAR → stack[0] = scope[0][21]
+// 29 GET_VAR → stack[1] = scope[0][3]
+// 31 SET_GLOBAL_PROP stack[1]["2"] ← stack[0]
+// 34 GET_VAR → stack[0] = scope[0][21]
+// 37 GET_VAR → stack[1] = scope[0][13]
+// 39 SET_GLOBAL_PROP stack[1]["3"] ← stack[0]
+// 42 GET_VAR → stack[0] = scope[0][21]
+// 45 GET_VAR → stack[1] = scope[0][4]
+// 47 SET_GLOBAL_PROP stack[1]["4"] ← stack[0]
+// 50 GET_VAR → stack[0] = scope[0][21]
+// 53 GET_VAR → stack[1] = scope[0][14]
+// 55 SET_GLOBAL_PROP stack[1]["5"] ← stack[0]
+// 58 GET_VAR → stack[0] = scope[0][21]
+// 61 GET_VAR → stack[1] = scope[0][5]
+// 63 SET_GLOBAL_PROP stack[1]["6"] ← stack[0]
+// 66 GET_VAR → stack[0] = scope[0][21]
+// 69 GET_VAR → stack[1] = scope[0][15]
+// 71 SET_GLOBAL_PROP stack[1]["7"] ← stack[0]
+// 74 GET_VAR → stack[0] = scope[0][21]
+// 77 GET_VAR → stack[1] = scope[0][6]
+// 79 SET_GLOBAL_PROP stack[1]["8"] ← stack[0]
+// 82 GET_VAR → stack[0] = scope[0][21]
+// 85 GET_VAR → stack[1] = scope[0][16]
+// 87 SET_GLOBAL_PROP stack[1]["9"] ← stack[0]
+// 90 GET_VAR → stack[0] = scope[0][21]
+// 93 GET_VAR → stack[1] = scope[0][7]
+// 95 SET_GLOBAL_PROP stack[1]["10"] ← stack[0]
+// 98 GET_VAR → stack[0] = scope[0][21]
+// 101 GET_VAR → stack[1] = scope[0][17]
+// 103 SET_GLOBAL_PROP stack[1]["11"] ← stack[0]
+// 106 GET_VAR → stack[0] = scope[0][21]
+// 109 GET_VAR → stack[1] = scope[0][8]
+// 111 SET_GLOBAL_PROP stack[1]["12"] ← stack[0]
+// 114 GET_VAR → stack[0] = scope[0][21]
+// 117 GET_VAR → stack[1] = scope[0][18]
+// 119 SET_GLOBAL_PROP stack[1]["13"] ← stack[0]
+// 122 GET_VAR → stack[0] = scope[0][21]
+// 125 GET_VAR → stack[1] = scope[0][9]
+// 127 SET_GLOBAL_PROP stack[1]["14"] ← stack[0]
+// 130 GET_VAR → stack[0] = scope[0][21]
+// 133 GET_VAR → stack[1] = scope[0][19]
+// 135 SET_GLOBAL_PROP stack[1]["15"] ← stack[0]
+// 138 GET_VAR → stack[0] = scope[0][21]
+// 141 GET_VAR → stack[1] = scope[0][10]
+// 143 SET_GLOBAL_PROP stack[1]["16"] ← stack[0]
+// 146 GET_VAR → stack[0] = scope[0][21]
+// 149 GET_VAR → stack[1] = scope[0][20]
+// 151 SET_GLOBAL_PROP stack[1]["17"] ← stack[0]
+// 154 GET_VAR → stack[0] = scope[0][21]
+// 157 GET_VAR → stack[1] = scope[0][11]
+// 159 SET_GLOBAL_PROP stack[1]["18"] ← stack[0]
+// 161 GET_GLOBAL → stack[0] = String
+// 163 GET_PROP_NAME stack[0] ← stack[0]["fromCharCode"]
+// 166 DUP → stack[1] = stack[0]
+// 166 GET_PROP_NAME stack[1] ← stack[1]["apply"]
+// 169 PUSH_NULL → stack[2] = null
+// 170 GET_VAR → stack[3] = scope[0][21]
+// 173 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 175 RETURN stack[0]
+------------------------99--------------------------
+// 0 GET_GLOBAL → stack[0] = String
+// 3 DUP → stack[1] = stack[0]
+// 3 GET_PROP_NAME stack[1] ← stack[1]["fromCharCode"]
+// 6 GET_VAR → stack[2] = scope[0][2]
+// 9 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 11 RETURN stack[0]
+------------------------100--------------------------
+// 1 PUSH_UNDEFINED → stack[0] = undefined
+// 2 GET_VAR → stack[1] = scope[1][3]
+// 5 GET_VAR → stack[2] = scope[0][2]
+// 8 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 10 PUSH_UNDEFINED → stack[1] = undefined
+// 11 GET_VAR → stack[2] = scope[1][3]
+// 14 GET_VAR → stack[3] = scope[0][3]
+// 17 CALL func.apply(thisArg, [1 args]) → stack[1]
+// 19 ADD stack[0] = stack[0] + stack[1]
+// 20 GET_VAR → stack[1] = scope[0][4]
+// 23 ADD stack[0] = stack[0] + stack[1]
+// 24 RETURN stack[0]

@@ -1,0 +1,20 @@
+// 1 PUSH_UNDEFINED → stack[0] = undefined
+// 2 GET_VAR → stack[1] = scope[2][3]
+// 5 GET_VAR → stack[2] = scope[0][2]
+// 8 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 10 SET_VAR scope[0][3] ← stack[0]
+// 13 GET_VAR → stack[0] = scope[0][3]
+// 15 GET_PROP_NAME stack[0] ← stack[0]["0"]
+// 18 SET_VAR scope[0][4] ← stack[0]
+// 21 GET_VAR → stack[0] = scope[0][3]
+// 24 DUP → stack[1] = stack[0]
+// 24 GET_PROP_NAME stack[1] ← stack[1]["substring"]
+// 26 PUSH_CONST → stack[2] = 1
+// 29 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 31 SET_VAR scope[0][5] ← stack[0]
+// 34 PUSH_UNDEFINED → stack[0] = undefined
+// 35 GET_VAR → stack[1] = scope[2][1]
+// 38 GET_VAR → stack[2] = scope[0][4]
+// 41 GET_VAR → stack[3] = scope[0][5]
+// 44 CALL func.apply(thisArg, [2 args]) → stack[0]
+// 46 RETURN stack[0]

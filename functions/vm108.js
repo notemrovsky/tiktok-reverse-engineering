@@ -1,0 +1,37 @@
+// 1 GET_VAR → stack[0] = scope[0][2]
+// 3 GET_PROP_NAME stack[0] ← stack[0]["length"]
+// 5 PUSH_CONST → stack[1] = 1
+// 8 LESS_EQUAL stack[0] = stack[0] <= stack[1]
+// 8 JUMP_IF_FALSE if (!stack[0]) JUMP_TO=11
+// 10 PUSH_CONST → stack[0] = 0
+// 13 RETURN stack[0]
+// 14 PUSH_UNDEFINED → stack[0] = undefined
+// 15 GET_VAR → stack[1] = scope[1][12]
+// 18 GET_VAR → stack[2] = scope[0][2]
+// 21 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 23 SET_VAR scope[0][3] ← stack[0]
+// 26 GET_VAR → stack[0] = scope[0][2]
+// 29 DUP → stack[1] = stack[0]
+// 29 GET_PROP_NAME stack[1] ← stack[1]["map"]
+// 31 PUSH_FUNCTION → stack[2] = function[109]
+// 34 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 36 SET_VAR scope[0][4] ← stack[0]
+// 38 GET_GLOBAL → stack[0] = Math
+// 41 DUP → stack[1] = stack[0]
+// 41 GET_PROP_NAME stack[1] ← stack[1]["sqrt"]
+// 44 GET_VAR → stack[2] = scope[0][4]
+// 47 DUP → stack[3] = stack[2]
+// 47 GET_PROP_NAME stack[3] ← stack[3]["map"]
+// 50 GET_VAR → stack[4] = scope[1][9]
+// 53 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 55 DUP → stack[3] = stack[2]
+// 55 GET_PROP_NAME stack[3] ← stack[3]["reduce"]
+// 58 GET_VAR → stack[4] = scope[1][8]
+// 61 CALL func.apply(thisArg, [1 args]) → stack[2]
+// 63 GET_VAR → stack[3] = scope[0][2]
+// 65 GET_PROP_NAME stack[3] ← stack[3]["length"]
+// 67 PUSH_CONST → stack[4] = 1
+// 70 SUB stack[3] = stack[3] - stack[4]
+// 71 DIV stack[2] = stack[2] / stack[3]
+// 72 CALL func.apply(thisArg, [1 args]) → stack[0]
+// 74 RETURN stack[0]
