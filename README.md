@@ -19,6 +19,7 @@ I'm not planning to continue working on this project because after making the de
 
 **Important**: If TikTok is not happy about this repository, please contact me first instead of sending a DMCA takedown:
 - Discord: emrovsky
+- Discord server: https://discord.gg/switchuwu
 - Email: eemrovsky@proton.me
 
 ## Table of Contents
