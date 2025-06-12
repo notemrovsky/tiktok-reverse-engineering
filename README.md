@@ -1,3 +1,8 @@
+---
+
+<sub>**Sponsor**: [OutpostProxies.com](https://outpostproxies.com) - Premium USA/Global proxies for security research. HTTP/SOCKS5 support, unlimited bandwidth, flexible plans starting at $2/GB. [Updates](https://t.me/outpostupdates) | [Support](https://t.me/outpostproxies)</sub>
+
+
 # TikTok Stack-Based Virtual Machine Reverse Engineering
 
 Reverse engineering analysis of TikTok's client-side stack-based virtual machine implementation, including string deobfuscation, bytecode parsing, and instruction disassembly.
@@ -425,5 +430,3 @@ This project is for educational and research purposes only. Don't use it for any
 
 
 ---
-
-<sub>**Sponsor**: [OutpostProxies.com](https://outpostproxies.com) - Premium USA/Global proxies for security research. HTTP/SOCKS5 support, unlimited bandwidth, flexible plans starting at $2/GB. [Updates](https://t.me/outpostupdates) | [Support](https://t.me/outpostproxies)</sub>
