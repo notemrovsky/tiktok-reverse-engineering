@@ -5,8 +5,6 @@ function OpHandler(instructionSet, strings) {
     let index = 0;
     let pointer = -1;
     let instruction = instructionSet[0];
-    let strictMode = instructionSet[2];
-    let exceptionHandlers = instructionSet[3];
     let devirtOutput = "";
 
     while (true) {
