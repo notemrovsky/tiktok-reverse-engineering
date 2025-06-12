@@ -422,3 +422,8 @@ This project is for educational and research purposes only. Don't use it for any
 ---
 
 *This was a 5-6 hour speedrun, so double-check everything and improve what you can.*
+
+
+---
+
+<sub>**Sponsor**: [OutpostProxies.com](https://outpostproxies.com) - Premium USA/Global proxies for security research. HTTP/SOCKS5 support, unlimited bandwidth, flexible plans starting at $2/GB. [Updates](https://t.me/outpostupdates) | [Support](https://t.me/outpostproxies)</sub>
