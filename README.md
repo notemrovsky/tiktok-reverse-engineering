@@ -2,7 +2,7 @@
 
 
 <img width="893" height="869" alt="image" src="https://github.com/user-attachments/assets/b05872f9-fc30-4a39-a4d8-dda9f7f21122" />
-If you want to buy all algorithms reversed in js or any lang that i will rewrite, hit me up, dont write if ur not willing to pay 5k+$
+If you want to buy all algorithms reversed in js or any lang that i will rewrite, hit me up, dont write if ur not willing to pay 3k+$
 
 ---
 
