@@ -19,8 +19,8 @@ This repo contains tools and analysis for reverse engineering TikTok's JavaScrip
 I'm not planning to continue working on this project because after making the devirtualizer my interest is totally gone (most of the time when I work on VMs). I wanted to help people who are struggling with VM reverse engineering, so I'm sharing all my work here.
 
 **Important**: If TikTok is not happy about this repository, please contact me first instead of sending a DMCA takedown: (All work done in this repository was for my own learning purposes and I have not coded any complete signer.)
-- Discord: emrovsky
-- Discord server: https://discord.gg/switchuwu
+- Discord: notemrovsky
+- Discord server: https://discord.gg/jsreversing
 - Email: eemrovsky@proton.me
 
 ## Table of Contents
